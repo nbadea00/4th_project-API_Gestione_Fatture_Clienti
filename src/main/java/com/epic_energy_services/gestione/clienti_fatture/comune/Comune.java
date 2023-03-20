@@ -26,7 +26,7 @@ public class Comune {
 	private Long id;
 	@Column(nullable = false, unique = true)
 	private String nome;
-	@Column(nullable = false, unique = true)
+	@Column(nullable = false)
 	private Integer codiceProvincia;
 	@Column(nullable = false)
 	private Integer progressivoComune;
@@ -34,5 +34,13 @@ public class Comune {
 	@ManyToOne
 	@JoinColumn(name = "id_provincia")
 	private Provincia provincia;
+
+	public Comune(String nome, Integer codiceProvincia, Integer progressivoComune, Provincia provincia) {
+		super();
+		this.nome = nome;
+		this.codiceProvincia = codiceProvincia;
+		this.progressivoComune = progressivoComune;
+		this.provincia = provincia;
+	}
 
 }

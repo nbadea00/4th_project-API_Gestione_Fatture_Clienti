@@ -5,6 +5,8 @@ import java.util.List;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
+import jakarta.persistence.EntityExistsException;
+
 @Service
 public class ProvinciaService {
 	
@@ -28,11 +30,15 @@ public class ProvinciaService {
 		System.out.println("Provincia rimossa");
 	}
 	
-	public Provincia findById(Long id) {
+	public Provincia getById(Long id) {
 		return repo.findById(id).get();
 	}
 	
-	public List<Provincia> findAll() {
+	public List<Provincia> getAll() {
 		return (List<Provincia>) repo.findAll();
+	}
+	
+	public Provincia getByNome(String s) {
+		return repo.findByNome(s);
 	}
 }

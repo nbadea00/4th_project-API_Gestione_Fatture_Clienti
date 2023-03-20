@@ -35,4 +35,13 @@ public class Provincia {
 	@OneToMany(mappedBy = "provincia")
 	private List<Comune> comuni;
 
+	public Provincia(String nome, String sigla, String regione) {
+		super();
+		this.nome = nome;
+		this.sigla = sigla;
+		this.regione = regione;
+	}
+	
+	
+
 }
