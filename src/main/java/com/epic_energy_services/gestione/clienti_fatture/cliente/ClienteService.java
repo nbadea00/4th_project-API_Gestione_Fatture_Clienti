@@ -28,6 +28,13 @@ public class ClienteService {
 		System.out.println("Cliente rimosso");
 	}
 	
+	public String removeClienteById (Long id) { 
+		repo.deleteById(id);
+		return "Cliente rimossso by id";
+	}
+	
+	
+	
 	public Cliente findById(Long id) {
 		return repo.findById(id).get();
 	}
@@ -36,4 +43,6 @@ public class ClienteService {
 		return (List<Cliente>) repo.findAll();
 	}
 
+	
+	
 }
