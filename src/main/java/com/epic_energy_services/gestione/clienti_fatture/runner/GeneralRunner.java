@@ -3,14 +3,18 @@ package com.epic_energy_services.gestione.clienti_fatture.runner;
 import java.io.FileNotFoundException;
 import java.io.FileReader;
 import java.io.IOException;
+import java.util.HashMap;
+import java.util.Map;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.ApplicationArguments;
 import org.springframework.boot.ApplicationRunner;
 import org.springframework.stereotype.Component;
 
+import com.epic_energy_services.gestione.clienti_fatture.cliente.Cliente;
 import com.epic_energy_services.gestione.clienti_fatture.comune.Comune;
 import com.epic_energy_services.gestione.clienti_fatture.comune.ComuneService;
+import com.epic_energy_services.gestione.clienti_fatture.indirizzo.IndirizzoService;
 import com.epic_energy_services.gestione.clienti_fatture.provincia.Provincia;
 import com.epic_energy_services.gestione.clienti_fatture.provincia.ProvinciaService;
 import com.opencsv.CSVReader;
@@ -20,13 +24,18 @@ public class GeneralRunner implements ApplicationRunner {
 	
 	@Autowired ComuneService comuneService;
 	@Autowired ProvinciaService provinciaService;
+	@Autowired FactoryGenericaProva factoryGenericaProva;
 
 	@Override
 	public void run(ApplicationArguments args) throws Exception {
 		System.out.println("General Runner run...");
 		
 		//popolaDbProvince();
-		//popolaDbComuni();
+		popolaDbComuni();
+		//popolaDbClienti();
+		//popolaDbIndirizzi();
+		//popolaDbFatture();
+		
 	}
 	
 	// PROVINCE
@@ -34,9 +43,9 @@ public class GeneralRunner implements ApplicationRunner {
 		try (CSVReader csvReader = new CSVReader(new FileReader("src/main/resources/assets/province-italiane.csv"));) {
 		    String[] values = null;
 		    
-		    String provincia_nome;
-		    String provincia_sigla;
-		    String provincia_regione;
+		    String provinciaNome;
+		    String provinciaSigla;
+		    String provinciaRegione;
 		    
 		    int n = 0;
 		    while ((values = csvReader.readNext()) != null) {
@@ -44,13 +53,11 @@ public class GeneralRunner implements ApplicationRunner {
 		    	String[] splitValue = value.split(";");
 		    	
 		    	if(n != 0) {
-		    		provincia_sigla = splitValue[0];
-		    		provincia_nome = splitValue[1];
-		    		provincia_regione = splitValue[2];
+		    		provinciaSigla = splitValue[0];
+		    		provinciaNome = splitValue[1];
+		    		provinciaRegione = splitValue[2];
 		    		
-		    		System.out.println(provincia_sigla + " - " + provincia_nome + " - " + provincia_regione);
-		    		
-		    		Provincia p = new Provincia(provincia_nome, provincia_sigla, provincia_regione);
+		    		Provincia p = new Provincia(provinciaNome, provinciaSigla, provinciaRegione);
 		    		provinciaService.createProvincia(p);
 		    	}
 		    	
@@ -70,31 +77,18 @@ public class GeneralRunner implements ApplicationRunner {
 	public void popolaDbComuni() {
 		try (CSVReader csvReader = new CSVReader(new FileReader("src/main/resources/assets/comuni-italiani.csv"))) {
 		    String[] values = null;
+		    String[] keys = csvReader.readNext();
+		    Map<String, String> mapComuni = new HashMap<String, String>();
 		    
-		    String codiceProvincia;
-		    String progressivoComune;
-			String comune_nome;
-			String nomeProvincia;
-			int n = 0;
-		    
-			
-		    while ((values = csvReader.readNext()) != null) {
-		    	String[] splitValue = values[0].split(";");
-		    	
-		    	if(n != 0) {
-		    		codiceProvincia = splitValue[0];
-		    		progressivoComune = splitValue[1];
-		    		comune_nome = splitValue[2];
-		    		nomeProvincia = splitValue[3];
-		    		
-		    		Provincia p = provinciaService.getByNome(nomeProvincia);
-		    		
-		    		Comune c = new Comune(comune_nome, Integer.parseInt(codiceProvincia), Integer.parseInt(progressivoComune), p);
-		    		comuneService.createComune(c);
+		    while ((values = csvReader.readNext()) != null) {	    	
+		    	for(int i = 0; i < keys.length; i++) {
+		    		if(values[i].equals("#RIF!")) values[i] = "0";
+		    		mapComuni.put(keys[i], values[i]);
 		    	}
 		    	
-		    	n++;
+		    	Comune c = factoryGenericaProva.creaComune(mapComuni, keys);
 		    	
+		    	System.out.println(c);
 		    }
 		} catch (FileNotFoundException e) {
 			// TODO Auto-generated catch block
@@ -103,6 +97,81 @@ public class GeneralRunner implements ApplicationRunner {
 			// TODO Auto-generated catch block
 			e.printStackTrace();
 		}
+		
+		System.out.println("fine");
+	}
+	
+	public void popolaDbClienti() {
+		try (CSVReader csvReader = new CSVReader(new FileReader("src/main/resources/assets/clienti_db.csv"))) {
+		    String[] values = null;
+		    String[] keys = csvReader.readNext();
+		    Map<String, String> mapCliente = new HashMap<String, String>();
+		    
+		    while ((values = csvReader.readNext()) != null) {	    	
+		    	for(int i = 0; i < keys.length; i++)
+		    		mapCliente.put(keys[i], values[i]);
+		    	
+		    	Cliente c = factoryGenericaProva.creaCriente(mapCliente, keys);
+		    	
+		    	System.out.println(c.toString());
+		    }
+		} catch (FileNotFoundException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		} catch (IOException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+		
+		System.out.println("fine");
+	}
+	
+	public void popolaDbIndirizzi() {
+		try (CSVReader csvReader = new CSVReader(new FileReader("src/main/resources/assets/indirizzi_db.csv"))) {
+		    String[] values = null;
+		    String[] keys = csvReader.readNext();
+		    Map<String, String> mapIndirizzi = new HashMap<String, String>();
+		    
+		    while ((values = csvReader.readNext()) != null) {	    	
+		    	for(int i = 0; i < keys.length; i++)
+		    		mapIndirizzi.put(keys[i], values[i]);
+		    	
+		    	for(int i = 0; i < keys.length; i++)
+		    		System.out.println(mapIndirizzi.get(keys[i]));
+		    }
+		} catch (FileNotFoundException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		} catch (IOException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+		
+		System.out.println("fine");
+	}
+	
+	public void popolaDbFatture() {
+		try (CSVReader csvReader = new CSVReader(new FileReader("src/main/resources/assets/fatture_db.csv"))) {
+		    String[] values = null;
+		    String[] keys = csvReader.readNext();
+		    Map<String, String> mapFatture = new HashMap<String, String>();
+		    
+		    while ((values = csvReader.readNext()) != null) {	    	
+		    	for(int i = 0; i < keys.length; i++)
+		    		mapFatture.put(keys[i], values[i]);
+		    	
+		    	for(int i = 0; i < keys.length; i++)
+		    		System.out.println(mapFatture.get(keys[i]));
+		    }
+		} catch (FileNotFoundException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		} catch (IOException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+		
+		System.out.println("fine");
 	}
 
 }
