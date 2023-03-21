@@ -5,13 +5,10 @@ import java.util.List;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
-import jakarta.persistence.EntityExistsException;
-
 @Service
 public class ProvinciaService {
 	
-	@Autowired
-	ProvinciaRepository repo;
+	@Autowired ProvinciaRepository repo;
 	
 	public Provincia createProvincia (Provincia p) {
 		repo.save(p);

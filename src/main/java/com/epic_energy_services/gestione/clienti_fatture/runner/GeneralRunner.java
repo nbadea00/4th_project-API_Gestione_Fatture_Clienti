@@ -1,11 +1,9 @@
 package com.epic_energy_services.gestione.clienti_fatture.runner;
 
+import java.io.FileNotFoundException;
 import java.io.FileReader;
-import java.util.ArrayList;
-import java.util.Arrays;
-import java.util.List;
+import java.io.IOException;
 
-import org.hibernate.sql.ast.tree.insert.Values;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.ApplicationArguments;
 import org.springframework.boot.ApplicationRunner;
@@ -15,22 +13,24 @@ import com.epic_energy_services.gestione.clienti_fatture.comune.Comune;
 import com.epic_energy_services.gestione.clienti_fatture.comune.ComuneService;
 import com.epic_energy_services.gestione.clienti_fatture.provincia.Provincia;
 import com.epic_energy_services.gestione.clienti_fatture.provincia.ProvinciaService;
-import com.fasterxml.jackson.annotation.JacksonInject.Value;
 import com.opencsv.CSVReader;
 
 @Component
 public class GeneralRunner implements ApplicationRunner {
 	
-	@Autowired
-	ComuneService comuneService;
-	@Autowired
-	ProvinciaService provinciaService;
+	@Autowired ComuneService comuneService;
+	@Autowired ProvinciaService provinciaService;
 
 	@Override
 	public void run(ApplicationArguments args) throws Exception {
 		System.out.println("General Runner run...");
 		
+		//popolaDbProvince();
+		//popolaDbComuni();
+	}
+	
 	// PROVINCE
+	public void popolaDbProvince() {
 		try (CSVReader csvReader = new CSVReader(new FileReader("src/main/resources/assets/province-italiane.csv"));) {
 		    String[] values = null;
 		    
@@ -57,22 +57,31 @@ public class GeneralRunner implements ApplicationRunner {
 		    	n++;
 		    	
 		    }
+		} catch (FileNotFoundException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		} catch (IOException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
 		}
-		
+	}
+	
 	// COMUNI
-		try (CSVReader csvReader = new CSVReader(new FileReader("src/main/resources/assets/comuni-italiani.csv"));) {
+	public void popolaDbComuni() {
+		try (CSVReader csvReader = new CSVReader(new FileReader("src/main/resources/assets/comuni-italiani.csv"))) {
 		    String[] values = null;
 		    
 		    String codiceProvincia;
 		    String progressivoComune;
 			String comune_nome;
 			String nomeProvincia;
+			int n = 0;
 		    
+			
 		    while ((values = csvReader.readNext()) != null) {
-		    	String value = values[0];
-		    	String[] splitValue = value.split(";");
+		    	String[] splitValue = values[0].split(";");
 		    	
-		    	if(splitValue.length == 4) {
+		    	if(n != 0) {
 		    		codiceProvincia = splitValue[0];
 		    		progressivoComune = splitValue[1];
 		    		comune_nome = splitValue[2];
@@ -84,9 +93,16 @@ public class GeneralRunner implements ApplicationRunner {
 		    		comuneService.createComune(c);
 		    	}
 		    	
+		    	n++;
+		    	
 		    }
+		} catch (FileNotFoundException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		} catch (IOException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
 		}
-
 	}
 
 }

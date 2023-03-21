@@ -1,10 +1,5 @@
 package com.epic_energy_services.gestione.clienti_fatture.auth.runner;
 
-import java.util.HashSet;
-import java.util.List;
-import java.util.Set;
-import java.util.stream.Collectors;
-
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.ApplicationArguments;
 import org.springframework.boot.ApplicationRunner;
@@ -13,7 +8,6 @@ import org.springframework.stereotype.Component;
 
 import com.epic_energy_services.gestione.clienti_fatture.auth.entity.ERole;
 import com.epic_energy_services.gestione.clienti_fatture.auth.entity.Role;
-import com.epic_energy_services.gestione.clienti_fatture.auth.payload.RegisterDto;
 import com.epic_energy_services.gestione.clienti_fatture.auth.repository.RoleRepository;
 import com.epic_energy_services.gestione.clienti_fatture.auth.repository.UserRepository;
 import com.epic_energy_services.gestione.clienti_fatture.auth.service.AuthService;
@@ -26,10 +20,6 @@ public class AuthRunner implements ApplicationRunner {
 	@Autowired UserRepository userRepository;
 	@Autowired PasswordEncoder passwordEncoder;
 	@Autowired AuthService authService;
-	
-//	private Set<Role> adminRole;
-//	private Set<Role> moderatorRole;
-//	private Set<Role> userRole;
 	
 	@Override
 	public void run(ApplicationArguments args) throws Exception {
@@ -51,17 +41,6 @@ public class AuthRunner implements ApplicationRunner {
 		moderator.setRoleName(ERole.ROLE_MODERATOR);
 		roleRepository.save(moderator);
 		
-//		adminRole = new HashSet<Role>();
-//		adminRole.add(admin);
-//		adminRole.add(moderator);
-//		adminRole.add(user);
-//		
-//		moderatorRole = new HashSet<Role>();
-//		moderatorRole.add(moderator);
-//		moderatorRole.add(user);
-//		
-//		userRole = new HashSet<Role>();
-//		userRole.add(user);
 	}
 
 }
