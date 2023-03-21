@@ -4,7 +4,7 @@ import java.math.BigDecimal;
 import java.sql.Date;
 
 import com.epic_energy_services.gestione.clienti_fatture.cliente.Cliente;
-
+import com.fasterxml.jackson.annotation.JsonIgnore;
 import jakarta.persistence.Column;
 import jakarta.persistence.Entity;
 import jakarta.persistence.EnumType;
@@ -18,6 +18,7 @@ import jakarta.persistence.Table;
 import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
+import lombok.ToString;
 
 @Entity
 @Table(name = "fatture")
@@ -36,12 +37,22 @@ public class Fattura {
 	@Column(nullable = false, unique = true)
 	private Integer numero;
 	
+	
 	@ManyToOne
 	@JoinColumn(name="id_cliente")
-	private Cliente cliente;
+	@JsonIgnore
+	@ToString.Exclude
+	private Cliente cliente; 
 	
 	@Column(nullable = false)
 	@Enumerated(EnumType.STRING)
 	private StatoFattura statoFattura;
-
+public Fattura(Date data, BigDecimal importo, Integer numero, StatoFattura statoFattura) {
+	super();
+	this.data = data;
+	this.importo = importo;
+	this.numero = numero;
+	this.statoFattura = statoFattura;
+}
+	
 }

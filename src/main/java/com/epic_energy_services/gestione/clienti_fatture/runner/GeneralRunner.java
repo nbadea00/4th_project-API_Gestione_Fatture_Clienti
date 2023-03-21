@@ -6,6 +6,7 @@ import java.io.IOException;
 import java.util.HashMap;
 import java.util.Map;
 
+
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.ApplicationArguments;
 import org.springframework.boot.ApplicationRunner;
@@ -14,7 +15,9 @@ import org.springframework.stereotype.Component;
 import com.epic_energy_services.gestione.clienti_fatture.cliente.Cliente;
 import com.epic_energy_services.gestione.clienti_fatture.comune.Comune;
 import com.epic_energy_services.gestione.clienti_fatture.comune.ComuneService;
-import com.epic_energy_services.gestione.clienti_fatture.indirizzo.IndirizzoService;
+
+import com.epic_energy_services.gestione.clienti_fatture.cliente.ClienteService;
+import com.epic_energy_services.gestione.clienti_fatture.fattura.FatturaService;
 import com.epic_energy_services.gestione.clienti_fatture.provincia.Provincia;
 import com.epic_energy_services.gestione.clienti_fatture.provincia.ProvinciaService;
 import com.opencsv.CSVReader;
@@ -25,18 +28,22 @@ public class GeneralRunner implements ApplicationRunner {
 	@Autowired ComuneService comuneService;
 	@Autowired ProvinciaService provinciaService;
 	@Autowired FactoryGenericaProva factoryGenericaProva;
+	@Autowired ClienteService clientService;
+	@Autowired FatturaService fatturaService;
 
 	@Override
 	public void run(ApplicationArguments args) throws Exception {
 		System.out.println("General Runner run...");
-		
 		//popolaDbProvince();
 		popolaDbComuni();
 		//popolaDbClienti();
 		//popolaDbIndirizzi();
 		//popolaDbFatture();
-		
+
 	}
+	
+	
+	
 	
 	// PROVINCE
 	public void popolaDbProvince() {
