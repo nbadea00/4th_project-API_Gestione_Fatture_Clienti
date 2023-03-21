@@ -10,8 +10,12 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;
 
 import com.epic_energy_services.gestione.clienti_fatture.cliente.Cliente;
+import com.epic_energy_services.gestione.clienti_fatture.cliente.ClienteService;
 import com.epic_energy_services.gestione.clienti_fatture.cliente.TipoCliente;
 import com.epic_energy_services.gestione.clienti_fatture.comune.Comune;
+import com.epic_energy_services.gestione.clienti_fatture.comune.ComuneService;
+import com.epic_energy_services.gestione.clienti_fatture.fattura.Fattura;
+import com.epic_energy_services.gestione.clienti_fatture.fattura.StatoFattura;
 import com.epic_energy_services.gestione.clienti_fatture.indirizzo.Indirizzo;
 import com.epic_energy_services.gestione.clienti_fatture.indirizzo.IndirizzoService;
 import com.epic_energy_services.gestione.clienti_fatture.provincia.Provincia;
@@ -22,6 +26,8 @@ public class FactoryGenericaProva {
 	
 	@Autowired IndirizzoService indirizzoService;
 	@Autowired ProvinciaService provinciaService;
+	@Autowired ComuneService comuneService;
+	@Autowired ClienteService clienteService;
 	
 	private static String dataFormat = "yyyy-MM-dd HH:mm:ss.SSS";
 	private static SimpleDateFormat formatter = new SimpleDateFormat(dataFormat);
@@ -73,7 +79,7 @@ public class FactoryGenericaProva {
 		comune.setCodiceProvincia(Integer.parseInt(map.get(keys[0])));
 		comune.setProgressivoComune(Integer.parseInt(map.get(keys[1])));
 		comune.setNome(map.get(keys[2]));
-		comune.setProvincia(provinciaService.getByNome(map.get(keys[2])));
+		comune.setProvincia(provinciaService.getByNome(map.get(keys[3])));
 		
 		return comune;
 	}
@@ -81,7 +87,35 @@ public class FactoryGenericaProva {
 	public Indirizzo creaIndirizzo(Map<String, String> map, String[] keys) {
 		Indirizzo indirizzo = new Indirizzo();
 		
+		indirizzo.setCap(map.get(keys[0]));
+		indirizzo.setCivico(map.get(keys[1]));
+		indirizzo.setLocalità(map.get(keys[2]));
+		indirizzo.setVia(map.get(keys[3]));
+		indirizzo.setComune(comuneService.findById(Long.parseLong(map.get(keys[4]))));
+		
 		return indirizzo;
+	}
+	
+	public Fattura creaFatture(Map<String, String> map, String[] keys) {
+		Fattura fattura = new Fattura();
+		
+		fattura.setAnno(Integer.parseInt(map.get(keys[0])));
+		String data = map.get(keys[1]);
+		while(data.toCharArray().length < dataFormat.length()) data += "0";
+		try {
+			Date d = formatter.parse(data);
+			fattura.setData(new java.sql.Date(d.getTime()));
+		} catch (ParseException e) {
+			e.printStackTrace();
+		}
+		
+		fattura.setImporto(new BigDecimal(map.get(keys[2])));
+		fattura.setNumero(Integer.parseInt(map.get(keys[3])));
+		fattura.setStatoFattura(StatoFattura.valueOf(map.get(keys[4])));
+		
+		fattura.setCliente(clienteService.findById(Long.parseLong(map.get(keys[5]))));
+		
+		return fattura;
 	}
 	
 	public Provincia creaProvincia(Map<String, String> map, String[] keys) {

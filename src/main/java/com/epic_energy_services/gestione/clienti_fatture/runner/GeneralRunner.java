@@ -17,7 +17,10 @@ import com.epic_energy_services.gestione.clienti_fatture.comune.Comune;
 import com.epic_energy_services.gestione.clienti_fatture.comune.ComuneService;
 
 import com.epic_energy_services.gestione.clienti_fatture.cliente.ClienteService;
+import com.epic_energy_services.gestione.clienti_fatture.fattura.Fattura;
 import com.epic_energy_services.gestione.clienti_fatture.fattura.FatturaService;
+import com.epic_energy_services.gestione.clienti_fatture.indirizzo.Indirizzo;
+import com.epic_energy_services.gestione.clienti_fatture.indirizzo.IndirizzoService;
 import com.epic_energy_services.gestione.clienti_fatture.provincia.Provincia;
 import com.epic_energy_services.gestione.clienti_fatture.provincia.ProvinciaService;
 import com.opencsv.CSVReader;
@@ -30,21 +33,20 @@ public class GeneralRunner implements ApplicationRunner {
 	@Autowired FactoryGenericaProva factoryGenericaProva;
 	@Autowired ClienteService clientService;
 	@Autowired FatturaService fatturaService;
+	@Autowired IndirizzoService indirizzoService;
+	@Autowired ClienteService clienteService;
 
 	@Override
 	public void run(ApplicationArguments args) throws Exception {
 		System.out.println("General Runner run...");
 		//popolaDbProvince();
-		popolaDbComuni();
-		//popolaDbClienti();
+		//popolaDbComuni();
 		//popolaDbIndirizzi();
+		//popolaDbClienti();
 		//popolaDbFatture();
 
 	}
-	
-	
-	
-	
+
 	// PROVINCE
 	public void popolaDbProvince() {
 		try (CSVReader csvReader = new CSVReader(new FileReader("src/main/resources/assets/province-italiane.csv"));) {
@@ -89,13 +91,12 @@ public class GeneralRunner implements ApplicationRunner {
 		    
 		    while ((values = csvReader.readNext()) != null) {	    	
 		    	for(int i = 0; i < keys.length; i++) {
-		    		if(values[i].equals("#RIF!")) values[i] = "0";
 		    		mapComuni.put(keys[i], values[i]);
 		    	}
 		    	
 		    	Comune c = factoryGenericaProva.creaComune(mapComuni, keys);
 		    	
-		    	System.out.println(c);
+		    	comuneService.createComune(c);
 		    }
 		} catch (FileNotFoundException e) {
 			// TODO Auto-generated catch block
@@ -120,7 +121,7 @@ public class GeneralRunner implements ApplicationRunner {
 		    	
 		    	Cliente c = factoryGenericaProva.creaCriente(mapCliente, keys);
 		    	
-		    	System.out.println(c.toString());
+		    	clienteService.createCliente(c);
 		    }
 		} catch (FileNotFoundException e) {
 			// TODO Auto-generated catch block
@@ -143,8 +144,9 @@ public class GeneralRunner implements ApplicationRunner {
 		    	for(int i = 0; i < keys.length; i++)
 		    		mapIndirizzi.put(keys[i], values[i]);
 		    	
-		    	for(int i = 0; i < keys.length; i++)
-		    		System.out.println(mapIndirizzi.get(keys[i]));
+		    	Indirizzo i = factoryGenericaProva.creaIndirizzo(mapIndirizzi, keys);
+		    	
+		    	indirizzoService.createIndirizzo(i);
 		    }
 		} catch (FileNotFoundException e) {
 			// TODO Auto-generated catch block
@@ -167,8 +169,9 @@ public class GeneralRunner implements ApplicationRunner {
 		    	for(int i = 0; i < keys.length; i++)
 		    		mapFatture.put(keys[i], values[i]);
 		    	
-		    	for(int i = 0; i < keys.length; i++)
-		    		System.out.println(mapFatture.get(keys[i]));
+		    	Fattura f = factoryGenericaProva.creaFatture(mapFatture, keys);
+		    	
+		    	fatturaService.createFattura(f);
 		    }
 		} catch (FileNotFoundException e) {
 			// TODO Auto-generated catch block

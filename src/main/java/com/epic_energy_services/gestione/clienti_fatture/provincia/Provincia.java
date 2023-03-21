@@ -3,6 +3,7 @@ package com.epic_energy_services.gestione.clienti_fatture.provincia;
 import java.util.List;
 
 import com.epic_energy_services.gestione.clienti_fatture.comune.Comune;
+import com.fasterxml.jackson.annotation.JsonIgnore;
 
 import jakarta.persistence.Column;
 import jakarta.persistence.Entity;
@@ -14,6 +15,7 @@ import jakarta.persistence.Table;
 import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
+import lombok.ToString;
 
 @Entity
 @Table(name = "province")
@@ -33,6 +35,8 @@ public class Provincia {
 	private String regione;
 	
 	@OneToMany(mappedBy = "provincia")
+	@JsonIgnore
+	@ToString.Exclude
 	private List<Comune> comuni;
 
 	public Provincia(String nome, String sigla, String regione) {

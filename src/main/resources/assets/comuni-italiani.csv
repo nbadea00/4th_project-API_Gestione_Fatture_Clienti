@@ -311,39 +311,39 @@ Codice Provincia (Storico)(1),Progressivo del Comune (2),Denominazione in italia
 90,5,Ardara,Arezzo
 95,7,Ardauli,Arezzo
 58,117,Ardea,Arezzo
-14,5,Ardenno,Ascoli Piceno
-16,12,Ardesio,Ascoli Piceno
-80,5,Ardore,Ascoli Piceno
-102,2,Arena,Ascoli Piceno
-18,5,Arena Po,Ascoli Piceno
-10,1,Arenzano,Ascoli Piceno
-15,9,Arese,Ascoli Piceno
-51,2,Arezzo,Ascoli Piceno
-13,11,Argegno,Ascoli Piceno
-37,2,Argelato,Ascoli Piceno
-38,1,Argenta,Ascoli Piceno
-4,6,Argentera,Ascoli Piceno
-4,7,Arguello,Ascoli Piceno
-79,7,Argusto,Ascoli Piceno
-69,3,Ari,Ascoli Piceno
-64,5,Ariano Irpino,Ascoli Piceno
-29,2,Ariano nel Polesine,Ascoli Piceno
-58,9,Ariccia,Ascoli Piceno
-69,4,Arielli,Ascoli Piceno
-61,4,Arienzo,Ascoli Piceno
-1,12,Arignano,Ascoli Piceno
-91,1,Aritzo,Ascoli Piceno
-103,3,Arizzano,Ascoli Piceno
-56,2,Arlena di Castro,Ascoli Piceno
-15,10,Arluno,Ascoli Piceno
-3,6,Armeno,Ascoli Piceno
-76,5,Armento,Ascoli Piceno
-8,4,Armo,Ascoli Piceno
-111,2,Armungia,Ascoli Piceno
-7,4,Arnad,Ascoli Piceno
-60,9,Arnara,Ascoli Piceno
-9,7,Arnasco,Ascoli Piceno
-75,7,Arnesano,Ascoli Piceno
+14,5,Ardenno,Ascoli-Piceno
+16,12,Ardesio,Ascoli-Piceno
+80,5,Ardore,Ascoli-Piceno
+102,2,Arena,Ascoli-Piceno
+18,5,Arena Po,Ascoli-Piceno
+10,1,Arenzano,Ascoli-Piceno
+15,9,Arese,Ascoli-Piceno
+51,2,Arezzo,Ascoli-Piceno
+13,11,Argegno,Ascoli-Piceno
+37,2,Argelato,Ascoli-Piceno
+38,1,Argenta,Ascoli-Piceno
+4,6,Argentera,Ascoli-Piceno
+4,7,Arguello,Ascoli-Piceno
+79,7,Argusto,Ascoli-Piceno
+69,3,Ari,Ascoli-Piceno
+64,5,Ariano Irpino,Ascoli-Piceno
+29,2,Ariano nel Polesine,Ascoli-Piceno
+58,9,Ariccia,Ascoli-Piceno
+69,4,Arielli,Ascoli-Piceno
+61,4,Arienzo,Ascoli-Piceno
+1,12,Arignano,Ascoli-Piceno
+91,1,Aritzo,Ascoli-Piceno
+103,3,Arizzano,Ascoli-Piceno
+56,2,Arlena di Castro,Ascoli-Piceno
+15,10,Arluno,Ascoli-Piceno
+3,6,Armeno,Ascoli-Piceno
+76,5,Armento,Ascoli-Piceno
+8,4,Armo,Ascoli-Piceno
+111,2,Armungia,Ascoli-Piceno
+7,4,Arnad,Ascoli-Piceno
+60,9,Arnara,Ascoli-Piceno
+9,7,Arnasco,Ascoli-Piceno
+75,7,Arnesano,Ascoli-Piceno
 103,4,Arola,Asti
 3,8,Arona,Asti
 13,12,Arosio,Asti
@@ -374,7 +374,7 @@ Codice Provincia (Storico)(1),Progressivo del Comune (2),Denominazione in italia
 24,8,Arzignano,Asti
 65,9,Ascea,Asti
 52,2,Asciano,Asti
-44,7,Ascoli Piceno,Asti
+44,7,Ascoli-Piceno,Asti
 71,5,Ascoli Satriano,Asti
 57,4,Ascrea,Asti
 24,9,Asiago,Asti
@@ -1142,122 +1142,122 @@ Codice Provincia (Storico)(1),Progressivo del Comune (2),Denominazione in italia
 78,23,Campana,Bologna
 108,14,Camparada,Bologna
 35,10,Campegine,Bologna
-54,5,Campello sul Clitunno,Bolzano/Bozen
-2,25,Campertogno,Bolzano/Bozen
-48,6,Campi Bisenzio,Bolzano/Bozen
-75,11,Campi Salentina,Bolzano/Bozen
-96,86,Campiglia Cervo,Bolzano/Bozen
-24,22,Campiglia dei Berici,Bolzano/Bozen
-49,2,Campiglia Marittima,Bolzano/Bozen
-1,49,Campiglione Fenile,Bolzano/Bozen
-13,40,Campione d'Italia,Bolzano/Bozen
-22,36,Campitello di Fassa,Bolzano/Bozen
-67,8,Campli,Bolzano/Bozen
-80,18,Campo Calabro,Bolzano/Bozen
-66,15,Campo di Giove,Bolzano/Bozen
-21,16,Campo di Trens,Bolzano/Bozen
-10,8,Campo Ligure,Bolzano/Bozen
-49,3,Campo nell'Elba,Bolzano/Bozen
-28,20,Campo San Martino,Bolzano/Bozen
-21,17,Campo Tures,Bolzano/Bozen
-70,6,Campobasso,Bolzano/Bozen
-84,10,Campobello di Licata,Bolzano/Bozen
-81,4,Campobello di Mazara,Bolzano/Bozen
-70,7,Campochiaro,Bolzano/Bozen
-28,17,Campodarsego,Bolzano/Bozen
-22,37,Campodenno,Bolzano/Bozen
-59,3,Campodimele,Bolzano/Bozen
-70,8,Campodipietra,Bolzano/Bozen
-14,12,Campodolcino,Bolzano/Bozen
-28,18,Campodoro,Bolzano/Bozen
-82,16,Campofelice di Fitalia,Bolzano/Bozen
-82,17,Campofelice di Roccella,Bolzano/Bozen
-109,4,Campofilone,Bolzano/Bozen
-82,18,Campofiorito,Bolzano/Bozen
-30,16,Campoformido,Bolzano/Bozen
-85,5,Campofranco,Bolzano/Bozen
-36,3,Campogalliano,Bolzano/Bozen
-62,13,Campolattaro,Bolzano/Bozen
-60,16,Campoli Appennino,Bolzano/Bozen
-62,14,Campoli del Monte Taburno,Bolzano/Bozen
-70,9,Campolieto,Bolzano/Bozen
-27,3,Campolongo Maggiore,Bolzano/Bozen
-30,138,Campolongo Tapogliano,Bolzano/Bozen
-76,17,Campomaggiore,Bolzano/Bozen
-70,10,Campomarino,Bolzano/Bozen
-10,9,Campomorone,Bolzano/Bozen
-27,4,Camponogara,Bolzano/Bozen
-65,23,Campora,Bolzano/Bozen
-82,19,Camporeale,Bolzano/Bozen
-46,6,Camporgiano,Bolzano/Bozen
-8,11,Camporosso,Bolzano/Bozen
-43,8,Camporotondo di Fiastrone,Bolzano/Bozen
-87,12,Camporotondo Etneo,Bolzano/Bozen
-28,19,Camposampiero,Bolzano/Bozen
-63,13,Camposano,Bolzano/Bozen
-36,4,Camposanto,Bolzano/Bozen
-18,26,Campospinoso,Bolzano/Bozen
-66,16,Campotosto,Bolzano/Bozen
-37,10,Camugnano,Bolzano/Bozen
-22,38,Canal San Bovo,Bolzano/Bozen
-4,37,Canale,Bolzano/Bozen
-25,23,Canale d'Agordo,Bolzano/Bozen
-58,16,Canale Monterano,Bolzano/Bozen
-29,9,Canaro,Bolzano/Bozen
-22,39,Canazei,Bolzano/Bozen
-76,18,Cancellara,Bolzano/Bozen
-61,12,Cancello ed Arnone,Bolzano/Bozen
-29,10,Canda,Bolzano/Bozen
-71,9,Candela,Bolzano/Bozen
-96,12,Candelo,Bolzano/Bozen
-1,50,Candia Canavese,Bolzano/Bozen
-18,27,Candia Lomellina,Bolzano/Bozen
-28,21,Candiana,Bolzano/Bozen
-64,16,Candida,Bolzano/Bozen
-80,19,Candidoni,Bolzano/Bozen
-1,51,Candiolo,Bolzano/Bozen
-15,46,Canegrate,Bolzano/Bozen
-5,17,Canelli,Bolzano/Bozen
-56,11,Canepina,Bolzano/Bozen
-93,9,Caneva,Bolzano/Bozen
-84,11,Canicattì,Bolzano/Bozen
-89,5,Canicattini Bagni,Bolzano/Bozen
-56,12,Canino,Bolzano/Bozen
-1,52,Canischio,Bolzano/Bozen
-66,17,Canistro,Bolzano/Bozen
-78,24,Canna,Bolzano/Bozen
-65,24,Cannalonga,Bolzano/Bozen
-54,6,Cannara,Bolzano/Bozen
-103,16,Cannero Riviera,Bolzano/Bozen
-18,29,Canneto Pavese,Bolzano/Bozen
-20,8,Canneto sull'Oglio,Bolzano/Bozen
-103,17,Cannobio,Bolzano/Bozen
-75,12,Cannole,Bolzano/Bozen
-80,20,Canolo,Bolzano/Bozen
-16,49,Canonica d'Adda,Bolzano/Bozen
-110,4,Canosa di Puglia,Bolzano/Bozen
-69,10,Canosa Sannita,Bolzano/Bozen
-4,38,Canosio,Bolzano/Bozen
-35,18,Canossa,Bolzano/Bozen
-66,18,Cansano,Bolzano/Bozen
-100,1,Cantagallo,Bolzano/Bozen
-57,9,Cantalice,Bolzano/Bozen
-1,53,Cantalupa,Bolzano/Bozen
-57,10,Cantalupo in Sabina,Bolzano/Bozen
-6,28,Cantalupo Ligure,Bolzano/Bozen
-94,5,Cantalupo nel Sannio,Bolzano/Bozen
-5,18,Cantarana,Bolzano/Bozen
-12,30,Cantello,Bolzano/Bozen
-58,17,Canterano,Bolzano/Bozen
-41,8,Cantiano,Bolzano/Bozen
-1,54,Cantoira,Bolzano/Bozen
-13,41,Cantù,Bolzano/Bozen
-67,9,Canzano,Bolzano/Bozen
-13,42,Canzo,Bolzano/Bozen
-27,5,Caorle,Bolzano/Bozen
-33,10,Caorso,Bolzano/Bozen
-65,25,Capaccio Paestum,Bolzano/Bozen
-82,20,Capaci,Bolzano/Bozen
+54,5,Campello sul Clitunno,Bolzano
+2,25,Campertogno,Bolzano
+48,6,Campi Bisenzio,Bolzano
+75,11,Campi Salentina,Bolzano
+96,86,Campiglia Cervo,Bolzano
+24,22,Campiglia dei Berici,Bolzano
+49,2,Campiglia Marittima,Bolzano
+1,49,Campiglione Fenile,Bolzano
+13,40,Campione d'Italia,Bolzano
+22,36,Campitello di Fassa,Bolzano
+67,8,Campli,Bolzano
+80,18,Campo Calabro,Bolzano
+66,15,Campo di Giove,Bolzano
+21,16,Campo di Trens,Bolzano
+10,8,Campo Ligure,Bolzano
+49,3,Campo nell'Elba,Bolzano
+28,20,Campo San Martino,Bolzano
+21,17,Campo Tures,Bolzano
+70,6,Campobasso,Bolzano
+84,10,Campobello di Licata,Bolzano
+81,4,Campobello di Mazara,Bolzano
+70,7,Campochiaro,Bolzano
+28,17,Campodarsego,Bolzano
+22,37,Campodenno,Bolzano
+59,3,Campodimele,Bolzano
+70,8,Campodipietra,Bolzano
+14,12,Campodolcino,Bolzano
+28,18,Campodoro,Bolzano
+82,16,Campofelice di Fitalia,Bolzano
+82,17,Campofelice di Roccella,Bolzano
+109,4,Campofilone,Bolzano
+82,18,Campofiorito,Bolzano
+30,16,Campoformido,Bolzano
+85,5,Campofranco,Bolzano
+36,3,Campogalliano,Bolzano
+62,13,Campolattaro,Bolzano
+60,16,Campoli Appennino,Bolzano
+62,14,Campoli del Monte Taburno,Bolzano
+70,9,Campolieto,Bolzano
+27,3,Campolongo Maggiore,Bolzano
+30,138,Campolongo Tapogliano,Bolzano
+76,17,Campomaggiore,Bolzano
+70,10,Campomarino,Bolzano
+10,9,Campomorone,Bolzano
+27,4,Camponogara,Bolzano
+65,23,Campora,Bolzano
+82,19,Camporeale,Bolzano
+46,6,Camporgiano,Bolzano
+8,11,Camporosso,Bolzano
+43,8,Camporotondo di Fiastrone,Bolzano
+87,12,Camporotondo Etneo,Bolzano
+28,19,Camposampiero,Bolzano
+63,13,Camposano,Bolzano
+36,4,Camposanto,Bolzano
+18,26,Campospinoso,Bolzano
+66,16,Campotosto,Bolzano
+37,10,Camugnano,Bolzano
+22,38,Canal San Bovo,Bolzano
+4,37,Canale,Bolzano
+25,23,Canale d'Agordo,Bolzano
+58,16,Canale Monterano,Bolzano
+29,9,Canaro,Bolzano
+22,39,Canazei,Bolzano
+76,18,Cancellara,Bolzano
+61,12,Cancello ed Arnone,Bolzano
+29,10,Canda,Bolzano
+71,9,Candela,Bolzano
+96,12,Candelo,Bolzano
+1,50,Candia Canavese,Bolzano
+18,27,Candia Lomellina,Bolzano
+28,21,Candiana,Bolzano
+64,16,Candida,Bolzano
+80,19,Candidoni,Bolzano
+1,51,Candiolo,Bolzano
+15,46,Canegrate,Bolzano
+5,17,Canelli,Bolzano
+56,11,Canepina,Bolzano
+93,9,Caneva,Bolzano
+84,11,Canicattì,Bolzano
+89,5,Canicattini Bagni,Bolzano
+56,12,Canino,Bolzano
+1,52,Canischio,Bolzano
+66,17,Canistro,Bolzano
+78,24,Canna,Bolzano
+65,24,Cannalonga,Bolzano
+54,6,Cannara,Bolzano
+103,16,Cannero Riviera,Bolzano
+18,29,Canneto Pavese,Bolzano
+20,8,Canneto sull'Oglio,Bolzano
+103,17,Cannobio,Bolzano
+75,12,Cannole,Bolzano
+80,20,Canolo,Bolzano
+16,49,Canonica d'Adda,Bolzano
+110,4,Canosa di Puglia,Bolzano
+69,10,Canosa Sannita,Bolzano
+4,38,Canosio,Bolzano
+35,18,Canossa,Bolzano
+66,18,Cansano,Bolzano
+100,1,Cantagallo,Bolzano
+57,9,Cantalice,Bolzano
+1,53,Cantalupa,Bolzano
+57,10,Cantalupo in Sabina,Bolzano
+6,28,Cantalupo Ligure,Bolzano
+94,5,Cantalupo nel Sannio,Bolzano
+5,18,Cantarana,Bolzano
+12,30,Cantello,Bolzano
+58,17,Canterano,Bolzano
+41,8,Cantiano,Bolzano
+1,54,Cantoira,Bolzano
+13,41,Cantù,Bolzano
+67,9,Canzano,Bolzano
+13,42,Canzo,Bolzano
+27,5,Caorle,Bolzano
+33,10,Caorso,Bolzano
+65,25,Capaccio Paestum,Bolzano
+82,20,Capaci,Bolzano
 53,3,Capalbio,Brescia
 50,5,Capannoli,Brescia
 46,7,Capannori,Brescia
@@ -2820,36 +2820,36 @@ Codice Provincia (Storico)(1),Progressivo del Comune (2),Denominazione in italia
 40,13,Forlimpopoli,Foggia
 103,31,Formazza,Foggia
 58,38,Formello,Foggia
-59,8,Formia,Forlì-Cesena
-61,35,Formicola,Forlì-Cesena
-19,44,Formigara,Forlì-Cesena
-36,15,Formigine,Forlì-Cesena
-2,59,Formigliana,Forlì-Cesena
-22,89,Fornace,Forlì-Cesena
-94,21,Fornelli,Forlì-Cesena
-30,40,Forni Avoltri,Forlì-Cesena
-30,41,Forni di Sopra,Forlì-Cesena
-30,42,Forni di Sotto,Forlì-Cesena
-1,107,Forno Canavese,Forlì-Cesena
-34,17,Fornovo di Taro,Forlì-Cesena
-16,105,Fornovo San Giovanni,Forlì-Cesena
-46,13,Forte dei Marmi,Forlì-Cesena
-21,32,Fortezza,Forlì-Cesena
-18,64,Fortunago,Forlì-Cesena
-83,24,Forza d'Agrò,Forlì-Cesena
-46,14,Fosciandora,Forlì-Cesena
-45,8,Fosdinovo,Forlì-Cesena
-66,44,Fossa,Forlì-Cesena
-69,33,Fossacesia,Forlì-Cesena
-27,15,Fossalta di Piave,Forlì-Cesena
-27,16,Fossalta di Portogruaro,Forlì-Cesena
-70,24,Fossalto,Forlì-Cesena
-4,89,Fossano,Forlì-Cesena
-54,19,Fossato di Vico,Forlì-Cesena
-79,52,Fossato Serralta,Forlì-Cesena
-27,17,Fossò,Forlì-Cesena
-41,15,Fossombrone,Forlì-Cesena
-24,41,Foza,Forlì-Cesena
+59,8,Formia,Forli-Cesena
+61,35,Formicola,Forli-Cesena
+19,44,Formigara,Forli-Cesena
+36,15,Formigine,Forli-Cesena
+2,59,Formigliana,Forli-Cesena
+22,89,Fornace,Forli-Cesena
+94,21,Fornelli,Forli-Cesena
+30,40,Forni Avoltri,Forli-Cesena
+30,41,Forni di Sopra,Forli-Cesena
+30,42,Forni di Sotto,Forli-Cesena
+1,107,Forno Canavese,Forli-Cesena
+34,17,Fornovo di Taro,Forli-Cesena
+16,105,Fornovo San Giovanni,Forli-Cesena
+46,13,Forte dei Marmi,Forli-Cesena
+21,32,Fortezza,Forli-Cesena
+18,64,Fortunago,Forli-Cesena
+83,24,Forza d'Agrò,Forli-Cesena
+46,14,Fosciandora,Forli-Cesena
+45,8,Fosdinovo,Forli-Cesena
+66,44,Fossa,Forli-Cesena
+69,33,Fossacesia,Forli-Cesena
+27,15,Fossalta di Piave,Forli-Cesena
+27,16,Fossalta di Portogruaro,Forli-Cesena
+70,24,Fossalto,Forli-Cesena
+4,89,Fossano,Forli-Cesena
+54,19,Fossato di Vico,Forli-Cesena
+79,52,Fossato Serralta,Forli-Cesena
+27,17,Fossò,Forli-Cesena
+41,15,Fossombrone,Forli-Cesena
+24,41,Foza,Forli-Cesena
 4,90,Frabosa Soprana,Frosinone
 4,91,Frabosa Sottana,Frosinone
 6,69,Fraconalto,Frosinone
@@ -3179,38 +3179,38 @@ Codice Provincia (Storico)(1),Progressivo del Comune (2),Denominazione in italia
 72,23,Gravina in Puglia,Isernia
 61,42,Grazzanise,Isernia
 5,57,Grazzano Badoglio,Isernia
-57,31,Greccio,La Spezia
-64,37,Greci,La Spezia
-2,65,Greggio,La Spezia
-6,83,Gremiasco,La Spezia
-7,31,Gressan,La Spezia
-7,32,Gressoney-La-Trinité,La Spezia
-7,33,Gressoney-Saint-Jean,La Spezia
-48,21,Greve in Chianti,La Spezia
-15,110,Grezzago,La Spezia
-23,38,Grezzana,La Spezia
-13,113,Griante,La Spezia
-61,43,Gricignano di Aversa,La Spezia
-3,79,Grignasco,La Spezia
-22,95,Grigno,La Spezia
-30,45,Grimacco,La Spezia
-78,59,Grimaldi,La Spezia
-4,100,Grinzane Cavour,La Spezia
-24,46,Grisignano di Zocco,La Spezia
-78,60,Grisolia,La Spezia
-37,31,Grizzana Morandi,La Spezia
-6,84,Grognardo,La Spezia
-16,118,Gromo,La Spezia
-6,85,Grondona,La Spezia
-16,119,Grone,La Spezia
-19,50,Grontardo,La Spezia
-18,76,Gropello Cairoli,La Spezia
-33,25,Gropparello,La Spezia
-1,118,Groscavallo,La Spezia
-14,33,Grosio,La Spezia
-14,34,Grosotto,La Spezia
-53,11,Grosseto,La Spezia
-1,119,Grosso,La Spezia
+57,31,Greccio,La-Spezia
+64,37,Greci,La-Spezia
+2,65,Greggio,La-Spezia
+6,83,Gremiasco,La-Spezia
+7,31,Gressan,La-Spezia
+7,32,Gressoney-La-Trinité,La-Spezia
+7,33,Gressoney-Saint-Jean,La-Spezia
+48,21,Greve in Chianti,La-Spezia
+15,110,Grezzago,La-Spezia
+23,38,Grezzana,La-Spezia
+13,113,Griante,La-Spezia
+61,43,Gricignano di Aversa,La-Spezia
+3,79,Grignasco,La-Spezia
+22,95,Grigno,La-Spezia
+30,45,Grimacco,La-Spezia
+78,59,Grimaldi,La-Spezia
+4,100,Grinzane Cavour,La-Spezia
+24,46,Grisignano di Zocco,La-Spezia
+78,60,Grisolia,La-Spezia
+37,31,Grizzana Morandi,La-Spezia
+6,84,Grognardo,La-Spezia
+16,118,Gromo,La-Spezia
+6,85,Grondona,La-Spezia
+16,119,Grone,La-Spezia
+19,50,Grontardo,La-Spezia
+18,76,Gropello Cairoli,La-Spezia
+33,25,Gropparello,La-Spezia
+1,118,Groscavallo,La-Spezia
+14,33,Grosio,La-Spezia
+14,34,Grosotto,La-Spezia
+53,11,Grosseto,La-Spezia
+1,119,Grosso,La-Spezia
 58,46,Grottaferrata,L'Aquila
 73,8,Grottaglie,L'Aquila
 64,38,Grottaminarda,L'Aquila
@@ -3356,7 +3356,7 @@ Codice Provincia (Storico)(1),Progressivo del Comune (2),Denominazione in italia
 7,39,La Magdeleine,Lecce
 4,105,La Morra,Lecce
 7,40,La Salle,Lecce
-11,15,La Spezia,Lecce
+11,15,La-Spezia,Lecce
 7,41,La Thuile,Lecce
 21,117,La Valle,Lecce
 25,27,La Valle Agordina,Lecce
@@ -4099,61 +4099,61 @@ Codice Provincia (Storico)(1),Progressivo del Comune (2),Denominazione in italia
 4,131,Monesiglio,Modena
 31,12,Monfalcone,Modena
 4,132,Monforte d'Alba,Modena
-83,54,Monforte San Giorgio,Monza - Brianza
-26,45,Monfumo,Monza - Brianza
-5,71,Mongardino,Monza - Brianza
-37,40,Monghidoro,Monza - Brianza
-102,22,Mongiana,Monza - Brianza
-6,100,Mongiardino Ligure,Monza - Brianza
-83,55,Mongiuffi Melia,Monza - Brianza
-96,35,Mongrando,Monza - Brianza
-78,80,Mongrassano,Monza - Brianza
-21,52,Monguelfo-Tesido,Monza - Brianza
-13,153,Monguzzo,Monza - Brianza
-17,109,Moniga del Garda,Monza - Brianza
-6,101,Monleale,Monza - Brianza
-17,110,Monno,Monza - Brianza
-72,30,Monopoli,Monza - Brianza
-82,49,Monreale,Monza - Brianza
-32,2,Monrupino,Monza - Brianza
-109,12,Monsampietro Morico,Monza - Brianza
-44,31,Monsampolo del Tronto,Monza - Brianza
-42,25,Monsano,Monza - Brianza
-28,55,Monselice,Monza - Brianza
-92,109,Monserrato,Monza - Brianza
-47,9,Monsummano Terme,Monza - Brianza
-4,133,Montà,Monza - Brianza
-5,72,Montabone,Monza - Brianza
-6,102,Montacuto,Monza - Brianza
-5,73,Montafia,Monza - Brianza
-70,41,Montagano,Monza - Brianza
-21,53,Montagna,Monza - Brianza
-14,44,Montagna in Valtellina,Monza - Brianza
-28,56,Montagnana,Monza - Brianza
-83,56,Montagnareale,Monza - Brianza
-64,51,Montaguto,Monza - Brianza
-48,27,Montaione,Monza - Brianza
-83,57,Montalbano Elicona,Monza - Brianza
-77,16,Montalbano Jonico,Monza - Brianza
-52,37,Montalcino,Monza - Brianza
-6,103,Montaldeo,Monza - Brianza
-6,104,Montaldo Bormida,Monza - Brianza
-4,134,Montaldo di Mondovì,Monza - Brianza
-4,135,Montaldo Roero,Monza - Brianza
-5,74,Montaldo Scarampi,Monza - Brianza
-1,158,Montaldo Torinese,Monza - Brianza
-47,10,Montale,Monza - Brianza
-1,159,Montalenghe,Monza - Brianza
-84,24,Montallegro,Monza - Brianza
-8,68,Montalto Carpasio,Monza - Brianza
-44,32,Montalto delle Marche,Monza - Brianza
-56,35,Montalto di Castro,Monza - Brianza
-1,160,Montalto Dora,Monza - Brianza
-18,94,Montalto Pavese,Monza - Brianza
-78,81,Montalto Uffugo,Monza - Brianza
-1,161,Montanaro,Monza - Brianza
-98,40,Montanaso Lombardo,Monza - Brianza
-4,136,Montanera,Monza - Brianza
+83,54,Monforte San Giorgio,Monza-Brianza
+26,45,Monfumo,Monza-Brianza
+5,71,Mongardino,Monza-Brianza
+37,40,Monghidoro,Monza-Brianza
+102,22,Mongiana,Monza-Brianza
+6,100,Mongiardino Ligure,Monza-Brianza
+83,55,Mongiuffi Melia,Monza-Brianza
+96,35,Mongrando,Monza-Brianza
+78,80,Mongrassano,Monza-Brianza
+21,52,Monguelfo-Tesido,Monza-Brianza
+13,153,Monguzzo,Monza-Brianza
+17,109,Moniga del Garda,Monza-Brianza
+6,101,Monleale,Monza-Brianza
+17,110,Monno,Monza-Brianza
+72,30,Monopoli,Monza-Brianza
+82,49,Monreale,Monza-Brianza
+32,2,Monrupino,Monza-Brianza
+109,12,Monsampietro Morico,Monza-Brianza
+44,31,Monsampolo del Tronto,Monza-Brianza
+42,25,Monsano,Monza-Brianza
+28,55,Monselice,Monza-Brianza
+92,109,Monserrato,Monza-Brianza
+47,9,Monsummano Terme,Monza-Brianza
+4,133,Montà,Monza-Brianza
+5,72,Montabone,Monza-Brianza
+6,102,Montacuto,Monza-Brianza
+5,73,Montafia,Monza-Brianza
+70,41,Montagano,Monza-Brianza
+21,53,Montagna,Monza-Brianza
+14,44,Montagna in Valtellina,Monza-Brianza
+28,56,Montagnana,Monza-Brianza
+83,56,Montagnareale,Monza-Brianza
+64,51,Montaguto,Monza-Brianza
+48,27,Montaione,Monza-Brianza
+83,57,Montalbano Elicona,Monza-Brianza
+77,16,Montalbano Jonico,Monza-Brianza
+52,37,Montalcino,Monza-Brianza
+6,103,Montaldeo,Monza-Brianza
+6,104,Montaldo Bormida,Monza-Brianza
+4,134,Montaldo di Mondovì,Monza-Brianza
+4,135,Montaldo Roero,Monza-Brianza
+5,74,Montaldo Scarampi,Monza-Brianza
+1,158,Montaldo Torinese,Monza-Brianza
+47,10,Montale,Monza-Brianza
+1,159,Montalenghe,Monza-Brianza
+84,24,Montallegro,Monza-Brianza
+8,68,Montalto Carpasio,Monza-Brianza
+44,32,Montalto delle Marche,Monza-Brianza
+56,35,Montalto di Castro,Monza-Brianza
+1,160,Montalto Dora,Monza-Brianza
+18,94,Montalto Pavese,Monza-Brianza
+78,81,Montalto Uffugo,Monza-Brianza
+1,161,Montanaro,Monza-Brianza
+98,40,Montanaso Lombardo,Monza-Brianza
+4,136,Montanera,Monza-Brianza
 65,70,Montano Antilia,Napoli
 13,154,Montano Lucino,Napoli
 109,13,Montappone,Napoli
@@ -4967,58 +4967,58 @@ Codice Provincia (Storico)(1),Progressivo del Comune (2),Denominazione in italia
 97,67,Perledo,Perugia
 4,161,Perletto,Perugia
 4,162,Perlo,Perugia
-7,48,Perloz,Pesaro e Urbino
-28,61,Pernumia,Pesaro e Urbino
-15,170,Pero,Pesaro e Urbino
-1,184,Perosa Argentina,Pesaro e Urbino
-1,185,Perosa Canavese,Pesaro e Urbino
-1,186,Perrero,Pesaro e Urbino
-19,68,Persico Dosimo,Pesaro e Urbino
-2,91,Pertengo,Pesaro e Urbino
-17,139,Pertica Alta,Pesaro e Urbino
-17,140,Pertica Bassa,Pesaro e Urbino
-65,93,Pertosa,Pesaro e Urbino
-1,187,Pertusio,Pesaro e Urbino
-54,39,Perugia,Pesaro e Urbino
-41,44,Pesaro,Pesaro e Urbino
-46,22,Pescaglia,Pesaro e Urbino
-23,58,Pescantina,Pesaro e Urbino
-68,28,Pescara,Pesaro e Urbino
-19,69,Pescarolo ed Uniti,Pesaro e Urbino
-66,68,Pescasseroli,Pesaro e Urbino
-97,68,Pescate,Pesaro e Urbino
-94,31,Pesche,Pesaro e Urbino
-71,38,Peschici,Pesaro e Urbino
-15,171,Peschiera Borromeo,Pesaro e Urbino
-23,59,Peschiera del Garda,Pesaro e Urbino
-47,12,Pescia,Pesaro e Urbino
-66,69,Pescina,Pesaro e Urbino
-62,50,Pesco Sannita,Pesaro e Urbino
-66,70,Pescocostanzo,Pesaro e Urbino
-94,32,Pescolanciano,Pesaro e Urbino
-76,58,Pescopagano,Pesaro e Urbino
-94,33,Pescopennataro,Pesaro e Urbino
-57,49,Pescorocchiano,Pesaro e Urbino
-68,29,Pescosansonesco,Pesaro e Urbino
-60,49,Pescosolido,Pesaro e Urbino
-15,172,Pessano con Bornago,Pesaro e Urbino
-19,70,Pessina Cremonese,Pesaro e Urbino
-1,188,Pessinetto,Pesaro e Urbino
-70,51,Petacciato,Pesaro e Urbino
-101,17,Petilia Policastro,Pesaro e Urbino
-65,94,Petina,Pesaro e Urbino
-82,55,Petralia Soprana,Pesaro e Urbino
-82,56,Petralia Sottana,Pesaro e Urbino
-57,50,Petrella Salto,Pesaro e Urbino
-70,52,Petrella Tifernina,Pesaro e Urbino
-41,45,Petriano,Pesaro e Urbino
-43,36,Petriolo,Pesaro e Urbino
-109,31,Petritoli,Pesaro e Urbino
-79,94,Petrizzi,Pesaro e Urbino
-79,95,Petronà,Pesaro e Urbino
-81,24,Petrosino,Pesaro e Urbino
-64,71,Petruro Irpino,Pesaro e Urbino
-3,116,Pettenasco,Pesaro e Urbino
+7,48,Perloz,Pesaro-Urbino
+28,61,Pernumia,Pesaro-Urbino
+15,170,Pero,Pesaro-Urbino
+1,184,Perosa Argentina,Pesaro-Urbino
+1,185,Perosa Canavese,Pesaro-Urbino
+1,186,Perrero,Pesaro-Urbino
+19,68,Persico Dosimo,Pesaro-Urbino
+2,91,Pertengo,Pesaro-Urbino
+17,139,Pertica Alta,Pesaro-Urbino
+17,140,Pertica Bassa,Pesaro-Urbino
+65,93,Pertosa,Pesaro-Urbino
+1,187,Pertusio,Pesaro-Urbino
+54,39,Perugia,Pesaro-Urbino
+41,44,Pesaro,Pesaro-Urbino
+46,22,Pescaglia,Pesaro-Urbino
+23,58,Pescantina,Pesaro-Urbino
+68,28,Pescara,Pesaro-Urbino
+19,69,Pescarolo ed Uniti,Pesaro-Urbino
+66,68,Pescasseroli,Pesaro-Urbino
+97,68,Pescate,Pesaro-Urbino
+94,31,Pesche,Pesaro-Urbino
+71,38,Peschici,Pesaro-Urbino
+15,171,Peschiera Borromeo,Pesaro-Urbino
+23,59,Peschiera del Garda,Pesaro-Urbino
+47,12,Pescia,Pesaro-Urbino
+66,69,Pescina,Pesaro-Urbino
+62,50,Pesco Sannita,Pesaro-Urbino
+66,70,Pescocostanzo,Pesaro-Urbino
+94,32,Pescolanciano,Pesaro-Urbino
+76,58,Pescopagano,Pesaro-Urbino
+94,33,Pescopennataro,Pesaro-Urbino
+57,49,Pescorocchiano,Pesaro-Urbino
+68,29,Pescosansonesco,Pesaro-Urbino
+60,49,Pescosolido,Pesaro-Urbino
+15,172,Pessano con Bornago,Pesaro-Urbino
+19,70,Pessina Cremonese,Pesaro-Urbino
+1,188,Pessinetto,Pesaro-Urbino
+70,51,Petacciato,Pesaro-Urbino
+101,17,Petilia Policastro,Pesaro-Urbino
+65,94,Petina,Pesaro-Urbino
+82,55,Petralia Soprana,Pesaro-Urbino
+82,56,Petralia Sottana,Pesaro-Urbino
+57,50,Petrella Salto,Pesaro-Urbino
+70,52,Petrella Tifernina,Pesaro-Urbino
+41,45,Petriano,Pesaro-Urbino
+43,36,Petriolo,Pesaro-Urbino
+109,31,Petritoli,Pesaro-Urbino
+79,94,Petrizzi,Pesaro-Urbino
+79,95,Petronà,Pesaro-Urbino
+81,24,Petrosino,Pesaro-Urbino
+64,71,Petruro Irpino,Pesaro-Urbino
+3,116,Pettenasco,Pesaro-Urbino
 96,42,Pettinengo,Pescara
 83,67,Pettineo,Pescara
 94,34,Pettoranello del Molise,Pescara
@@ -5355,145 +5355,145 @@ Codice Provincia (Storico)(1),Progressivo del Comune (2),Denominazione in italia
 57,57,Posta,Ravenna
 60,57,Posta Fibreno,Ravenna
 21,66,Postal,Ravenna
-14,53,Postalesio,Reggio Calabria
-65,101,Postiglione,Reggio Calabria
-2,102,Postua,Reggio Calabria
-76,63,Potenza,Reggio Calabria
-43,43,Potenza Picena,Reggio Calabria
-24,81,Pove del Grappa,Reggio Calabria
-26,62,Povegliano,Reggio Calabria
-23,60,Povegliano Veronese,Reggio Calabria
-35,29,Poviglio,Reggio Calabria
-30,78,Povoletto,Reggio Calabria
-57,58,Pozzaglia Sabina,Reggio Calabria
-19,77,Pozzaglio ed Uniti,Reggio Calabria
-88,8,Pozzallo,Reggio Calabria
-94,38,Pozzilli,Reggio Calabria
-15,177,Pozzo d'Adda,Reggio Calabria
-6,137,Pozzol Groppo,Reggio Calabria
-17,151,Pozzolengo,Reggio Calabria
-24,82,Pozzoleone,Reggio Calabria
-6,138,Pozzolo Formigaro,Reggio Calabria
-90,5,Pozzomaggiore,Reggio Calabria
-28,70,Pozzonovo,Reggio Calabria
-63,60,Pozzuoli,Reggio Calabria
-30,79,Pozzuolo del Friuli,Reggio Calabria
-15,178,Pozzuolo Martesana,Reggio Calabria
-16,173,Pradalunga,Reggio Calabria
-30,80,Pradamano,Reggio Calabria
-4,173,Pradleves,Reggio Calabria
-1,201,Pragelato,Reggio Calabria
-78,101,Praia a Mare,Reggio Calabria
-65,102,Praiano,Reggio Calabria
-17,152,Pralboino,Reggio Calabria
-1,202,Prali,Reggio Calabria
-1,203,Pralormo,Reggio Calabria
-96,49,Pralungo,Reggio Calabria
-27,30,Pramaggiore,Reggio Calabria
-1,204,Pramollo,Reggio Calabria
-2,104,Prarolo,Reggio Calabria
-1,205,Prarostino,Reggio Calabria
-6,139,Prasco,Reggio Calabria
-1,206,Prascorsano,Reggio Calabria
-14,54,Prata Camportaccio,Reggio Calabria
-66,74,Prata d'Ansidonia,Reggio Calabria
-93,34,Prata di Pordenone,Reggio Calabria
-64,74,Prata di Principato Ultra,Reggio Calabria
-61,63,Prata Sannita,Reggio Calabria
-61,64,Pratella,Reggio Calabria
-1,207,Pratiglione,Reggio Calabria
-100,5,Prato,Reggio Calabria
-21,67,Prato allo Stelvio,Reggio Calabria
-30,81,Prato Carnico,Reggio Calabria
-3,122,Prato Sesia,Reggio Calabria
-66,75,Pratola Peligna,Reggio Calabria
-64,75,Pratola Serra,Reggio Calabria
-51,41,Pratovecchio Stia,Reggio Calabria
-93,35,Pravisdomini,Reggio Calabria
-96,50,Pray,Reggio Calabria
-4,174,Prazzo,Reggio Calabria
-30,82,Precenicco,Reggio Calabria
-54,43,Preci,Reggio Calabria
-22,230,Predaia,Reggio Calabria
-40,32,Predappio,Reggio Calabria
-22,147,Predazzo,Reggio Calabria
-21,68,Predoi,Reggio Calabria
-16,174,Predore,Reggio Calabria
-6,140,Predosa,Reggio Calabria
-26,63,Preganziol,Reggio Calabria
-15,179,Pregnana Milanese,Reggio Calabria
-8,47,Prelà,Reggio Calabria
-97,69,Premana,Reggio Calabria
-30,83,Premariacco,Reggio Calabria
-103,55,Premeno,Reggio Calabria
-103,56,Premia,Reggio Calabria
-40,33,Premilcuore,Reggio Calabria
-16,175,Premolo,Reggio Calabria
-103,57,Premosello-Chiovenda,Reggio Calabria
-30,84,Preone,Reggio Calabria
-30,85,Prepotto,Reggio Calabria
-7,53,Pré-Saint-Didier,Reggio Calabria
-17,153,Preseglie,Reggio Calabria
-61,65,Presenzano,Reggio Calabria
-16,176,Presezzo,Reggio Calabria
-75,98,Presicce-Acquarica,Reggio Calabria
-23,61,Pressana,Reggio Calabria
-69,69,Pretoro,Reggio Calabria
-17,155,Prevalle,Reggio Calabria
-66,76,Prezza,Reggio Calabria
-4,175,Priero,Reggio Calabria
-65,103,Prignano Cilento,Reggio Calabria
-36,33,Prignano sulla Secchia,Reggio Calabria
-97,70,Primaluna,Reggio Calabria
-22,245,Primiero San Martino di Castrozza,Reggio Calabria
-4,176,Priocca,Reggio Calabria
-4,177,Priola,Reggio Calabria
-89,21,Priolo Gargallo,Reggio Calabria
-59,19,Priverno,Reggio Calabria
-82,60,Prizzi,Reggio Calabria
-56,44,Proceno,Reggio Calabria
-63,61,Procida,Reggio nell'Emilia
-10,45,Propata,Reggio nell'Emilia
-13,192,Proserpio,Reggio nell'Emilia
-59,20,Prossedi,Reggio nell'Emilia
-17,156,Provaglio d'Iseo,Reggio nell'Emilia
-17,157,Provaglio Val Sabbia,Reggio nell'Emilia
-21,69,Proves,Reggio nell'Emilia
-70,56,Provvidenti,Reggio nell'Emilia
-4,178,Prunetto,Reggio nell'Emilia
-17,158,Puegnago del Garda,Reggio nell'Emilia
-62,55,Puglianello,Reggio nell'Emilia
-92,50,Pula,Reggio nell'Emilia
-30,86,Pulfero,Reggio nell'Emilia
-73,22,Pulsano,Reggio nell'Emilia
-16,177,Pumenengo,Reggio nell'Emilia
-13,193,Pusiano,Reggio nell'Emilia
-90,5,Putifigari,Reggio nell'Emilia
-72,36,Putignano,Reggio nell'Emilia
-64,76,Quadrelle,Reggio nell'Emilia
-69,70,Quadri,Reggio nell'Emilia
-1,208,Quagliuzzo,Reggio nell'Emilia
-63,62,Qualiano,Reggio nell'Emilia
-5,88,Quaranti,Reggio nell'Emilia
-96,87,Quaregna Cerreto,Reggio nell'Emilia
-6,141,Quargnento,Reggio nell'Emilia
-103,58,Quarna Sopra,Reggio nell'Emilia
-103,59,Quarna Sotto,Reggio nell'Emilia
-2,107,Quarona,Reggio nell'Emilia
-47,17,Quarrata,Reggio nell'Emilia
-7,54,Quart,Reggio nell'Emilia
-63,63,Quarto,Reggio nell'Emilia
-27,31,Quarto d'Altino,Reggio nell'Emilia
-92,51,Quartu Sant'Elena,Reggio nell'Emilia
-92,105,Quartucciu,Reggio nell'Emilia
-1,209,Quassolo,Reggio nell'Emilia
-6,142,Quattordio,Reggio nell'Emilia
-35,30,Quattro Castella,Reggio nell'Emilia
-25,70,Quero Vas,Reggio nell'Emilia
-9,52,Quiliano,Reggio nell'Emilia
-1,210,Quincinetto,Reggio nell'Emilia
-64,77,Quindici,Reggio nell'Emilia
-20,46,Quingentole,Reggio nell'Emilia
+14,53,Postalesio,Reggio-Calabria
+65,101,Postiglione,Reggio-Calabria
+2,102,Postua,Reggio-Calabria
+76,63,Potenza,Reggio-Calabria
+43,43,Potenza Picena,Reggio-Calabria
+24,81,Pove del Grappa,Reggio-Calabria
+26,62,Povegliano,Reggio-Calabria
+23,60,Povegliano Veronese,Reggio-Calabria
+35,29,Poviglio,Reggio-Calabria
+30,78,Povoletto,Reggio-Calabria
+57,58,Pozzaglia Sabina,Reggio-Calabria
+19,77,Pozzaglio ed Uniti,Reggio-Calabria
+88,8,Pozzallo,Reggio-Calabria
+94,38,Pozzilli,Reggio-Calabria
+15,177,Pozzo d'Adda,Reggio-Calabria
+6,137,Pozzol Groppo,Reggio-Calabria
+17,151,Pozzolengo,Reggio-Calabria
+24,82,Pozzoleone,Reggio-Calabria
+6,138,Pozzolo Formigaro,Reggio-Calabria
+90,5,Pozzomaggiore,Reggio-Calabria
+28,70,Pozzonovo,Reggio-Calabria
+63,60,Pozzuoli,Reggio-Calabria
+30,79,Pozzuolo del Friuli,Reggio-Calabria
+15,178,Monza - Brianza,Reggio-Calabria
+16,173,Pradalunga,Reggio-Calabria
+30,80,Pradamano,Reggio-Calabria
+4,173,Pradleves,Reggio-Calabria
+1,201,Pragelato,Reggio-Calabria
+78,101,Praia a Mare,Reggio-Calabria
+65,102,Praiano,Reggio-Calabria
+17,152,Pralboino,Reggio-Calabria
+1,202,Prali,Reggio-Calabria
+1,203,Pralormo,Reggio-Calabria
+96,49,Pralungo,Reggio-Calabria
+27,30,Pramaggiore,Reggio-Calabria
+1,204,Pramollo,Reggio-Calabria
+2,104,Prarolo,Reggio-Calabria
+1,205,Prarostino,Reggio-Calabria
+6,139,Prasco,Reggio-Calabria
+1,206,Prascorsano,Reggio-Calabria
+14,54,Prata Camportaccio,Reggio-Calabria
+66,74,Prata d'Ansidonia,Reggio-Calabria
+93,34,Prata di Pordenone,Reggio-Calabria
+64,74,Prata di Principato Ultra,Reggio-Calabria
+61,63,Prata Sannita,Reggio-Calabria
+61,64,Pratella,Reggio-Calabria
+1,207,Pratiglione,Reggio-Calabria
+100,5,Prato,Reggio-Calabria
+21,67,Prato allo Stelvio,Reggio-Calabria
+30,81,Prato Carnico,Reggio-Calabria
+3,122,Prato Sesia,Reggio-Calabria
+66,75,Pratola Peligna,Reggio-Calabria
+64,75,Pratola Serra,Reggio-Calabria
+51,41,Pratovecchio Stia,Reggio-Calabria
+93,35,Pravisdomini,Reggio-Calabria
+96,50,Pray,Reggio-Calabria
+4,174,Prazzo,Reggio-Calabria
+30,82,Precenicco,Reggio-Calabria
+54,43,Preci,Reggio-Calabria
+22,230,Predaia,Reggio-Calabria
+40,32,Predappio,Reggio-Calabria
+22,147,Predazzo,Reggio-Calabria
+21,68,Predoi,Reggio-Calabria
+16,174,Predore,Reggio-Calabria
+6,140,Predosa,Reggio-Calabria
+26,63,Preganziol,Reggio-Calabria
+15,179,Pregnana Milanese,Reggio-Calabria
+8,47,Prelà,Reggio-Calabria
+97,69,Premana,Reggio-Calabria
+30,83,Premariacco,Reggio-Calabria
+103,55,Premeno,Reggio-Calabria
+103,56,Premia,Reggio-Calabria
+40,33,Premilcuore,Reggio-Calabria
+16,175,Premolo,Reggio-Calabria
+103,57,Premosello-Chiovenda,Reggio-Calabria
+30,84,Preone,Reggio-Calabria
+30,85,Prepotto,Reggio-Calabria
+7,53,Pré-Saint-Didier,Reggio-Calabria
+17,153,Preseglie,Reggio-Calabria
+61,65,Presenzano,Reggio-Calabria
+16,176,Presezzo,Reggio-Calabria
+75,98,Presicce-Acquarica,Reggio-Calabria
+23,61,Pressana,Reggio-Calabria
+69,69,Pretoro,Reggio-Calabria
+17,155,Prevalle,Reggio-Calabria
+66,76,Prezza,Reggio-Calabria
+4,175,Priero,Reggio-Calabria
+65,103,Prignano Cilento,Reggio-Calabria
+36,33,Prignano sulla Secchia,Reggio-Calabria
+97,70,Primaluna,Reggio-Calabria
+22,245,Primiero San Martino di Castrozza,Reggio-Calabria
+4,176,Priocca,Reggio-Calabria
+4,177,Priola,Reggio-Calabria
+89,21,Priolo Gargallo,Reggio-Calabria
+59,19,Priverno,Reggio-Calabria
+82,60,Prizzi,Reggio-Calabria
+56,44,Proceno,Reggio-Calabria
+63,61,Procida,Reggio-Emilia
+10,45,Propata,Reggio-Emilia
+13,192,Proserpio,Reggio-Emilia
+59,20,Prossedi,Reggio-Emilia
+17,156,Provaglio d'Iseo,Reggio-Emilia
+17,157,Provaglio Val Sabbia,Reggio-Emilia
+21,69,Proves,Reggio-Emilia
+70,56,Provvidenti,Reggio-Emilia
+4,178,Prunetto,Reggio-Emilia
+17,158,Puegnago del Garda,Reggio-Emilia
+62,55,Puglianello,Reggio-Emilia
+92,50,Pula,Reggio-Emilia
+30,86,Pulfero,Reggio-Emilia
+73,22,Pulsano,Reggio-Emilia
+16,177,Pumenengo,Reggio-Emilia
+13,193,Pusiano,Reggio-Emilia
+90,5,Putifigari,Reggio-Emilia
+72,36,Putignano,Reggio-Emilia
+64,76,Quadrelle,Reggio-Emilia
+69,70,Quadri,Reggio-Emilia
+1,208,Quagliuzzo,Reggio-Emilia
+63,62,Qualiano,Reggio-Emilia
+5,88,Quaranti,Reggio-Emilia
+96,87,Quaregna Cerreto,Reggio-Emilia
+6,141,Quargnento,Reggio-Emilia
+103,58,Quarna Sopra,Reggio-Emilia
+103,59,Quarna Sotto,Reggio-Emilia
+2,107,Quarona,Reggio-Emilia
+47,17,Quarrata,Reggio-Emilia
+7,54,Quart,Reggio-Emilia
+63,63,Quarto,Reggio-Emilia
+27,31,Quarto d'Altino,Reggio-Emilia
+92,51,Quartu Sant'Elena,Reggio-Emilia
+92,105,Quartucciu,Reggio-Emilia
+1,209,Quassolo,Reggio-Emilia
+6,142,Quattordio,Reggio-Emilia
+35,30,Quattro Castella,Reggio-Emilia
+25,70,Quero Vas,Reggio-Emilia
+9,52,Quiliano,Reggio-Emilia
+1,210,Quincinetto,Reggio-Emilia
+64,77,Quindici,Reggio-Emilia
+20,46,Quingentole,Reggio-Emilia
 19,78,Quintano,Rieti
 26,64,Quinto di Treviso,Rieti
 2,108,Quinto Vercellese,Rieti
@@ -5555,7 +5555,7 @@ Codice Provincia (Storico)(1),Progressivo del Comune (2),Denominazione in italia
 86,16,Regalbuto,Rieti
 48,35,Reggello,Rieti
 80,63,Reggio di Calabria,Rieti
-35,33,Reggio nell'Emilia,Rieti
+35,33,Reggio-Emilia,Rieti
 35,32,Reggiolo,Rieti
 62,56,Reino,Rieti
 83,70,Reitano,Rieti
@@ -6215,113 +6215,113 @@ Codice Provincia (Storico)(1),Progressivo del Comune (2),Denominazione in italia
 83,80,San Pier Niceto,Sondrio
 83,81,San Piero Patti,Sondrio
 79,114,San Pietro a Maida,Sondrio
-30,103,San Pietro al Natisone,Sud Sardegna
-65,125,San Pietro al Tanagro,Sud Sardegna
-79,115,San Pietro Apostolo,Sud Sardegna
-94,43,San Pietro Avellana,Sud Sardegna
-87,44,San Pietro Clarenza,Sud Sardegna
-25,47,San Pietro di Cadore,Sud Sardegna
-80,75,San Pietro di Caridà,Sud Sardegna
-26,73,San Pietro di Feletto,Sud Sardegna
-23,75,San Pietro di Morubio,Sud Sardegna
-78,126,San Pietro in Amantea,Sud Sardegna
-23,76,San Pietro in Cariano,Sud Sardegna
-37,55,San Pietro in Casale,Sud Sardegna
-33,41,San Pietro in Cerro,Sud Sardegna
-28,78,San Pietro in Gu,Sud Sardegna
-78,127,San Pietro in Guarano,Sud Sardegna
-75,71,San Pietro in Lama,Sud Sardegna
-61,79,San Pietro Infine,Sud Sardegna
-3,135,San Pietro Mosezzo,Sud Sardegna
-24,94,San Pietro Mussolino,Sud Sardegna
-1,250,San Pietro Val Lemina,Sud Sardegna
-74,16,San Pietro Vernotico,Sud Sardegna
-28,79,San Pietro Viminario,Sud Sardegna
-66,88,San Pio delle Camere,Sud Sardegna
-58,96,San Polo dei Cavalieri,Sud Sardegna
-35,38,San Polo d'Enza,Sud Sardegna
-26,74,San Polo di Piave,Sud Sardegna
-70,71,San Polo Matese,Sud Sardegna
-1,251,San Ponso,Sud Sardegna
-36,38,San Possidonio,Sud Sardegna
-61,80,San Potito Sannitico,Sud Sardegna
-64,86,San Potito Ultra,Sud Sardegna
-61,81,San Prisco,Sud Sardegna
-80,76,San Procopio,Sud Sardegna
-36,39,San Prospero,Sud Sardegna
-52,30,San Quirico d'Orcia,Sud Sardegna
-93,40,San Quirino,Sud Sardegna
-1,252,San Raffaele Cimena,Sud Sardegna
-80,77,San Roberto,Sud Sardegna
-98,49,San Rocco al Porto,Sud Sardegna
-46,27,San Romano in Garfagnana,Sud Sardegna
-65,126,San Rufo,Sud Sardegna
-83,82,San Salvatore di Fitalia,Sud Sardegna
-6,154,San Salvatore Monferrato,Sud Sardegna
-62,68,San Salvatore Telesino,Sud Sardegna
-69,83,San Salvo,Sud Sardegna
-63,70,San Sebastiano al Vesuvio,Sud Sardegna
-6,155,San Sebastiano Curone,Sud Sardegna
-1,253,San Sebastiano da Po,Sud Sardegna
-1,254,San Secondo di Pinerolo,Sud Sardegna
-34,33,San Secondo Parmense,Sud Sardegna
-76,78,San Severino Lucano,Sud Sardegna
-43,47,San Severino Marche,Sud Sardegna
-71,51,San Severo,Sud Sardegna
-13,248,San Siro,Sud Sardegna
-64,87,San Sossio Baronia,Sud Sardegna
-79,116,San Sostene,Sud Sardegna
-78,128,San Sosti,Sud Sardegna
-111,65,San Sperate,Sud Sardegna
-27,36,San Stino di Livenza,Sud Sardegna
-61,85,San Tammaro,Sud Sardegna
-83,90,San Teodoro,Sud Sardegna
-90,5,San Teodoro,Sud Sardegna
-25,49,San Tomaso Agordino,Sud Sardegna
-68,38,San Valentino in Abruzzo Citeriore,Sud Sardegna
-65,132,San Valentino Torio,Sud Sardegna
-55,30,San Venanzo,Sud Sardegna
-26,76,San Vendemiano,Sud Sardegna
-95,50,San Vero Milis,Sud Sardegna
-49,18,San Vincenzo,Sud Sardegna
-78,135,San Vincenzo La Costa,Sud Sardegna
-66,92,San Vincenzo Valle Roveto,Sud Sardegna
-63,75,San Vitaliano,Sud Sardegna
-111,66,San Vito,Sud Sardegna
-93,41,San Vito al Tagliamento,Sud Sardegna
-30,105,San Vito al Torre,Sud Sardegna
-69,86,San Vito Chietino,Sud Sardegna
-74,17,San Vito dei Normanni,Sud Sardegna
-25,51,San Vito di Cadore,Sud Sardegna
-30,106,San Vito di Fagagna,Sud Sardegna
-24,96,San Vito di Leguzzano,Sud Sardegna
-81,20,San Vito Lo Capo,Sud Sardegna
-58,100,San Vito Romano,Sud Sardegna
-79,122,San Vito sullo Ionio,Sud Sardegna
-60,70,San Vittore del Lazio,Sud Sardegna
-15,201,San Vittore Olona,Sud Sardegna
-23,79,San Zeno di Montagna,Sud Sardegna
-17,173,San Zeno Naviglio,Sud Sardegna
-15,202,San Zenone al Lambro,Sud Sardegna
-18,145,San Zenone al Po,Sud Sardegna
-26,77,San Zenone degli Ezzelini,Sud Sardegna
-75,67,Sanarica,Sud Sardegna
-96,59,Sandigliano,Sud Sardegna
-24,91,Sandrigo,Sud Sardegna
-4,208,Sanfrè,Sud Sardegna
-4,209,Sanfront,Sud Sardegna
-1,241,Sangano,Sud Sardegna
-12,141,Sangiano,Sud Sardegna
-78,117,Sangineto,Sud Sardegna
-23,72,Sanguinetto,Sud Sardegna
-111,67,Sanluri,Sud Sardegna
-18,138,Sannazzaro de' Burgondi,Sud Sardegna
-72,40,Sannicandro di Bari,Sud Sardegna
-75,70,Sannicola,Sud Sardegna
-8,55,Sanremo,Sud Sardegna
-51,34,Sansepolcro,Sud Sardegna
-16,191,Santa Brigida,Sud Sardegna
-78,129,Santa Caterina Albanese,Sud Sardegna
+30,103,San Pietro al Natisone,null
+65,125,San Pietro al Tanagro,null
+79,115,San Pietro Apostolo,null
+94,43,San Pietro Avellana,null
+87,44,San Pietro Clarenza,null
+25,47,San Pietro di Cadore,null
+80,75,San Pietro di Caridà,null
+26,73,San Pietro di Feletto,null
+23,75,San Pietro di Morubio,null
+78,126,San Pietro in Amantea,null
+23,76,San Pietro in Cariano,null
+37,55,San Pietro in Casale,null
+33,41,San Pietro in Cerro,null
+28,78,San Pietro in Gu,null
+78,127,San Pietro in Guarano,null
+75,71,San Pietro in Lama,null
+61,79,San Pietro Infine,null
+3,135,San Pietro Mosezzo,null
+24,94,San Pietro Mussolino,null
+1,250,San Pietro Val Lemina,null
+74,16,San Pietro Vernotico,null
+28,79,San Pietro Viminario,null
+66,88,San Pio delle Camere,null
+58,96,San Polo dei Cavalieri,null
+35,38,San Polo d'Enza,null
+26,74,San Polo di Piave,null
+70,71,San Polo Matese,null
+1,251,San Ponso,null
+36,38,San Possidonio,null
+61,80,San Potito Sannitico,null
+64,86,San Potito Ultra,null
+61,81,San Prisco,null
+80,76,San Procopio,null
+36,39,San Prospero,null
+52,30,San Quirico d'Orcia,null
+93,40,San Quirino,null
+1,252,San Raffaele Cimena,null
+80,77,San Roberto,null
+98,49,San Rocco al Porto,null
+46,27,San Romano in Garfagnana,null
+65,126,San Rufo,null
+83,82,San Salvatore di Fitalia,null
+6,154,San Salvatore Monferrato,null
+62,68,San Salvatore Telesino,null
+69,83,San Salvo,null
+63,70,San Sebastiano al Vesuvio,null
+6,155,San Sebastiano Curone,null
+1,253,San Sebastiano da Po,null
+1,254,San Secondo di Pinerolo,null
+34,33,San Secondo Parmense,null
+76,78,San Severino Lucano,null
+43,47,San Severino Marche,null
+71,51,San Severo,null
+13,248,San Siro,null
+64,87,San Sossio Baronia,null
+79,116,San Sostene,null
+78,128,San Sosti,null
+111,65,San Sperate,null
+27,36,San Stino di Livenza,null
+61,85,San Tammaro,null
+83,90,San Teodoro,null
+90,5,San Teodoro,null
+25,49,San Tomaso Agordino,null
+68,38,San Valentino in Abruzzo Citeriore,null
+65,132,San Valentino Torio,null
+55,30,San Venanzo,null
+26,76,San Vendemiano,null
+95,50,San Vero Milis,null
+49,18,San Vincenzo,null
+78,135,San Vincenzo La Costa,null
+66,92,San Vincenzo Valle Roveto,null
+63,75,San Vitaliano,null
+111,66,San Vito,null
+93,41,San Vito al Tagliamento,null
+30,105,San Vito al Torre,null
+69,86,San Vito Chietino,null
+74,17,San Vito dei Normanni,null
+25,51,San Vito di Cadore,null
+30,106,San Vito di Fagagna,null
+24,96,San Vito di Leguzzano,null
+81,20,San Vito Lo Capo,null
+58,100,San Vito Romano,null
+79,122,San Vito sullo Ionio,null
+60,70,San Vittore del Lazio,null
+15,201,San Vittore Olona,null
+23,79,San Zeno di Montagna,null
+17,173,San Zeno Naviglio,null
+15,202,San Zenone al Lambro,null
+18,145,San Zenone al Po,null
+26,77,San Zenone degli Ezzelini,null
+75,67,Sanarica,null
+96,59,Sandigliano,null
+24,91,Sandrigo,null
+4,208,Sanfrè,null
+4,209,Sanfront,null
+1,241,Sangano,null
+12,141,Sangiano,null
+78,117,Sangineto,null
+23,72,Sanguinetto,null
+111,67,Sanluri,null
+18,138,Sannazzaro de' Burgondi,null
+72,40,Sannicandro di Bari,null
+75,70,Sannicola,null
+8,55,Sanremo,null
+51,34,Sansepolcro,null
+16,191,Santa Brigida,null
+78,129,Santa Caterina Albanese,null
 79,117,Santa Caterina dello Ionio,Taranto
 85,17,Santa Caterina Villarmosa,Taranto
 75,72,Santa Cesarea Terme,Taranto
@@ -7168,80 +7168,80 @@ Codice Provincia (Storico)(1),Progressivo del Comune (2),Denominazione in italia
 109,40,Torre San Patrizio,Udine
 74,19,Torre Santa Susanna,Udine
 30,122,Torreano,Udine
-24,107,Torrebelvicino,Valle d'Aosta/Vallée d'Aoste
-69,93,Torrebruna,Valle d'Aosta/Vallée d'Aoste
-62,76,Torrecuso,Valle d'Aosta/Vallée d'Aoste
-28,92,Torreglia,Valle d'Aosta/Vallée d'Aoste
-83,98,Torregrotta,Valle d'Aosta/Vallée d'Aoste
-71,56,Torremaggiore,Valle d'Aosta/Vallée d'Aoste
-83,108,Torrenova,Valle d'Aosta/Vallée d'Aoste
-4,229,Torresina,Valle d'Aosta/Vallée d'Aoste
-82,72,Torretta,Valle d'Aosta/Vallée d'Aoste
-18,160,Torrevecchia Pia,Valle d'Aosta/Vallée d'Aoste
-69,94,Torrevecchia Teatina,Valle d'Aosta/Vallée d'Aoste
-23,86,Torri del Benaco,Valle d'Aosta/Vallée d'Aoste
-24,108,Torri di Quartesolo,Valle d'Aosta/Vallée d'Aoste
-57,70,Torri in Sabina,Valle d'Aosta/Vallée d'Aoste
-60,79,Torrice,Valle d'Aosta/Vallée d'Aoste
-73,28,Torricella,Valle d'Aosta/Vallée d'Aoste
-19,108,Torricella del Pizzo,Valle d'Aosta/Vallée d'Aoste
-57,69,Torricella in Sabina,Valle d'Aosta/Vallée d'Aoste
-69,95,Torricella Peligna,Valle d'Aosta/Vallée d'Aoste
-67,43,Torricella Sicura,Valle d'Aosta/Vallée d'Aoste
-18,161,Torricella Verzate,Valle d'Aosta/Vallée d'Aoste
-10,62,Torriglia,Valle d'Aosta/Vallée d'Aoste
-34,41,Torrile,Valle d'Aosta/Vallée d'Aoste
-64,111,Torrioni,Valle d'Aosta/Vallée d'Aoste
-52,35,Torrita di Siena,Valle d'Aosta/Vallée d'Aoste
-58,106,Torrita Tiberina,Valle d'Aosta/Vallée d'Aoste
-91,95,Tortolì,Valle d'Aosta/Vallée d'Aoste
-6,174,Tortona,Valle d'Aosta/Vallée d'Aoste
-78,149,Tortora,Valle d'Aosta/Vallée d'Aoste
-65,150,Tortorella,Valle d'Aosta/Vallée d'Aoste
-67,44,Tortoreto,Valle d'Aosta/Vallée d'Aoste
-83,99,Tortorici,Valle d'Aosta/Vallée d'Aoste
-30,123,Torviscosa,Valle d'Aosta/Vallée d'Aoste
-17,187,Toscolano-Maderno,Valle d'Aosta/Vallée d'Aoste
-67,45,Tossicia,Valle d'Aosta/Vallée d'Aoste
-14,68,Tovo di Sant'Agata,Valle d'Aosta/Vallée d'Aoste
-9,62,Tovo San Giacomo,Valle d'Aosta/Vallée d'Aoste
-82,73,Trabia,Valle d'Aosta/Vallée d'Aoste
-12,127,Tradate,Valle d'Aosta/Vallée d'Aoste
-95,66,Tramatza,Valle d'Aosta/Vallée d'Aoste
-22,203,Trambileno,Valle d'Aosta/Vallée d'Aoste
-65,151,Tramonti,Valle d'Aosta/Vallée d'Aoste
-93,45,Tramonti di Sopra,Valle d'Aosta/Vallée d'Aoste
-93,46,Tramonti di Sotto,Valle d'Aosta/Vallée d'Aoste
-76,91,Tramutola,Valle d'Aosta/Vallée d'Aoste
-1,276,Trana,Valle d'Aosta/Vallée d'Aoste
-110,9,Trani,Valle d'Aosta/Vallée d'Aoste
-14,69,Traona,Valle d'Aosta/Vallée d'Aoste
-81,21,Trapani,Valle d'Aosta/Vallée d'Aoste
-82,74,Trappeto,Valle d'Aosta/Vallée d'Aoste
-103,66,Trarego Viggiona,Valle d'Aosta/Vallée d'Aoste
-66,102,Trasacco,Valle d'Aosta/Vallée d'Aoste
-30,124,Trasaghis,Valle d'Aosta/Vallée d'Aoste
-103,67,Trasquera,Valle d'Aosta/Vallée d'Aoste
-111,90,Tratalias,Valle d'Aosta/Vallée d'Aoste
-18,162,Travacò Siccomario,Valle d'Aosta/Vallée d'Aoste
-17,188,Travagliato,Valle d'Aosta/Vallée d'Aoste
-12,128,Travedona-Monate,Valle d'Aosta/Vallée d'Aoste
-1,278,Traversella,Valle d'Aosta/Vallée d'Aoste
-34,42,Traversetolo,Valle d'Aosta/Vallée d'Aoste
-1,279,Traves,Valle d'Aosta/Vallée d'Aoste
-93,47,Travesio,Valle d'Aosta/Vallée d'Aoste
-33,43,Travo,Valle d'Aosta/Vallée d'Aoste
-22,247,Tre Ville,Valle d'Aosta/Vallée d'Aoste
-28,93,Trebaseleghe,Valle d'Aosta/Vallée d'Aoste
-78,150,Trebisacce,Valle d'Aosta/Vallée d'Aoste
-63,91,Trecase,Valle d'Aosta/Vallée d'Aoste
-87,50,Trecastagni,Valle d'Aosta/Vallée d'Aoste
-42,50,Trecastelli,Valle d'Aosta/Vallée d'Aoste
-3,149,Trecate,Valle d'Aosta/Vallée d'Aoste
-76,92,Trecchina,Valle d'Aosta/Vallée d'Aoste
-29,47,Trecenta,Valle d'Aosta/Vallée d'Aoste
-40,49,Tredozio,Valle d'Aosta/Vallée d'Aoste
-69,96,Treglio,Valle d'Aosta/Vallée d'Aoste
+24,107,Torrebelvicino,Aosta
+69,93,Torrebruna,Aosta
+62,76,Torrecuso,Aosta
+28,92,Torreglia,Aosta
+83,98,Torregrotta,Aosta
+71,56,Torremaggiore,Aosta
+83,108,Torrenova,Aosta
+4,229,Torresina,Aosta
+82,72,Torretta,Aosta
+18,160,Torrevecchia Pia,Aosta
+69,94,Torrevecchia Teatina,Aosta
+23,86,Torri del Benaco,Aosta
+24,108,Torri di Quartesolo,Aosta
+57,70,Torri in Sabina,Aosta
+60,79,Torrice,Aosta
+73,28,Torricella,Aosta
+19,108,Torricella del Pizzo,Aosta
+57,69,Torricella in Sabina,Aosta
+69,95,Torricella Peligna,Aosta
+67,43,Torricella Sicura,Aosta
+18,161,Torricella Verzate,Aosta
+10,62,Torriglia,Aosta
+34,41,Torrile,Aosta
+64,111,Torrioni,Aosta
+52,35,Torrita di Siena,Aosta
+58,106,Torrita Tiberina,Aosta
+91,95,Tortolì,Aosta
+6,174,Tortona,Aosta
+78,149,Tortora,Aosta
+65,150,Tortorella,Aosta
+67,44,Tortoreto,Aosta
+83,99,Tortorici,Aosta
+30,123,Torviscosa,Aosta
+17,187,Toscolano-Maderno,Aosta
+67,45,Tossicia,Aosta
+14,68,Tovo di Sant'Agata,Aosta
+9,62,Tovo San Giacomo,Aosta
+82,73,Trabia,Aosta
+12,127,Tradate,Aosta
+95,66,Tramatza,Aosta
+22,203,Trambileno,Aosta
+65,151,Tramonti,Aosta
+93,45,Tramonti di Sopra,Aosta
+93,46,Tramonti di Sotto,Aosta
+76,91,Tramutola,Aosta
+1,276,Trana,Aosta
+110,9,Trani,Aosta
+14,69,Traona,Aosta
+81,21,Trapani,Aosta
+82,74,Trappeto,Aosta
+103,66,Trarego Viggiona,Aosta
+66,102,Trasacco,Aosta
+30,124,Trasaghis,Aosta
+103,67,Trasquera,Aosta
+111,90,Tratalias,Aosta
+18,162,Travacò Siccomario,Aosta
+17,188,Travagliato,Aosta
+12,128,Travedona-Monate,Aosta
+1,278,Traversella,Aosta
+34,42,Traversetolo,Aosta
+1,279,Traves,Aosta
+93,47,Travesio,Aosta
+33,43,Travo,Aosta
+22,247,Tre Ville,Aosta
+28,93,Trebaseleghe,Aosta
+78,150,Trebisacce,Aosta
+63,91,Trecase,Aosta
+87,50,Trecastagni,Aosta
+42,50,Trecastelli,Aosta
+3,149,Trecate,Aosta
+76,92,Trecchina,Aosta
+29,47,Trecenta,Aosta
+40,49,Tredozio,Aosta
+69,96,Treglio,Aosta
 23,87,Tregnago,Varese
 43,54,Treia,Varese
 4,230,Treiso,Varese
@@ -7424,80 +7424,80 @@ Codice Provincia (Storico)(1),Progressivo del Comune (2),Denominazione in italia
 22,209,Valfloriana,Venezia
 43,58,Valfornace,Venezia
 14,73,Valfurva,Venezia
-12,131,Valganna,Verbano-Cusio-Ossola
-1,285,Valgioie,Verbano-Cusio-Ossola
-16,225,Valgoglio,Verbano-Cusio-Ossola
-4,234,Valgrana,Verbano-Cusio-Ossola
-97,82,Valgreghentino,Verbano-Cusio-Ossola
-7,68,Valgrisenche,Verbano-Cusio-Ossola
-86,19,Valguarnera Caropepe,Verbano-Cusio-Ossola
-25,62,Vallada Agordina,Verbano-Cusio-Ossola
-96,72,Vallanzengo,Verbano-Cusio-Ossola
-22,210,Vallarsa,Verbano-Cusio-Ossola
-64,114,Vallata,Verbano-Cusio-Ossola
-61,96,Valle Agricola,Verbano-Cusio-Ossola
-21,108,Valle Aurina,Verbano-Cusio-Ossola
-103,79,Valle Cannobina,Verbano-Cusio-Ossola
-67,46,Valle Castellana,Verbano-Cusio-Ossola
-65,153,Valle dell'Angelo,Verbano-Cusio-Ossola
-25,63,Valle di Cadore,Verbano-Cusio-Ossola
-21,109,Valle di Casies,Verbano-Cusio-Ossola
-61,97,Valle di Maddaloni,Verbano-Cusio-Ossola
-18,168,Valle Lomellina,Verbano-Cusio-Ossola
-18,169,Valle Salimbene,Verbano-Cusio-Ossola
-96,74,Valle San Nicolao,Verbano-Cusio-Ossola
-8,62,Vallebona,Verbano-Cusio-Ossola
-60,82,Vallecorsa,Verbano-Cusio-Ossola
-8,63,Vallecrosia,Verbano-Cusio-Ossola
-82,76,Valledolmo,Verbano-Cusio-Ossola
-90,5,Valledoria,Verbano-Cusio-Ossola
-79,151,Vallefiorita,Verbano-Cusio-Ossola
-41,68,Vallefoglia,Verbano-Cusio-Ossola
-22,248,Vallelaghi,Verbano-Cusio-Ossola
-102,45,Vallelonga,Verbano-Cusio-Ossola
-85,21,Vallelunga Pratameno,Verbano-Cusio-Ossola
-60,83,Vallemaio,Verbano-Cusio-Ossola
-58,108,Vallepietra,Verbano-Cusio-Ossola
-56,54,Vallerano,Verbano-Cusio-Ossola
-111,95,Vallermosa,Verbano-Cusio-Ossola
-60,84,Vallerotonda,Verbano-Cusio-Ossola
-64,115,Vallesaccarda,Verbano-Cusio-Ossola
-16,226,Valleve,Verbano-Cusio-Ossola
-24,113,Valli del Pasubio,Verbano-Cusio-Ossola
-58,109,Vallinfreda,Verbano-Cusio-Ossola
-17,193,Vallio Terme,Verbano-Cusio-Ossola
-65,154,Vallo della Lucania,Verbano-Cusio-Ossola
-54,58,Vallo di Nera,Verbano-Cusio-Ossola
-1,286,Vallo Torinese,Verbano-Cusio-Ossola
-4,235,Valloriate,Verbano-Cusio-Ossola
-6,178,Valmacca,Verbano-Cusio-Ossola
-97,83,Valmadrera,Verbano-Cusio-Ossola
-58,110,Valmontone,Verbano-Cusio-Ossola
-13,232,Valmorea,Verbano-Cusio-Ossola
-34,44,Valmozzola,Verbano-Cusio-Ossola
-16,227,Valnegra,Verbano-Cusio-Ossola
-7,69,Valpelline,Verbano-Cusio-Ossola
-1,287,Valperga,Verbano-Cusio-Ossola
-1,288,Valprato Soana,Verbano-Cusio-Ossola
-37,61,Valsamoggia,Verbano-Cusio-Ossola
-7,70,Valsavarenche,Verbano-Cusio-Ossola
-77,30,Valsinni,Verbano-Cusio-Ossola
-13,234,Valsolda,Verbano-Cusio-Ossola
-103,69,Valstrona,Verbano-Cusio-Ossola
-54,59,Valtopina,Verbano-Cusio-Ossola
-16,229,Valtorta,Verbano-Cusio-Ossola
-7,71,Valtournenche,Verbano-Cusio-Ossola
-65,155,Valva,Verbano-Cusio-Ossola
-97,93,Valvarrone,Verbano-Cusio-Ossola
-93,53,Valvasone Arzene,Verbano-Cusio-Ossola
-87,52,Valverde,Verbano-Cusio-Ossola
-17,194,Valvestino,Verbano-Cusio-Ossola
-21,110,Vandoies,Verbano-Cusio-Ossola
-15,249,Vanzaghello,Verbano-Cusio-Ossola
-15,229,Vanzago,Verbano-Cusio-Ossola
-103,70,Vanzone con San Carlo,Verbano-Cusio-Ossola
-15,230,Vaprio d'Adda,Verbano-Cusio-Ossola
-3,153,Vaprio d'Agogna,Verbano-Cusio-Ossola
+12,131,Valganna,Aosta
+1,285,Valgioie,Aosta
+16,225,Valgoglio,Aosta
+4,234,Valgrana,Aosta
+97,82,Valgreghentino,Aosta
+7,68,Valgrisenche,Aosta
+86,19,Valguarnera Caropepe,Aosta
+25,62,Vallada Agordina,Aosta
+96,72,Vallanzengo,Aosta
+22,210,Vallarsa,Aosta
+64,114,Vallata,Aosta
+61,96,Valle Agricola,Aosta
+21,108,Valle Aurina,Aosta
+103,79,Valle Cannobina,Aosta
+67,46,Valle Castellana,Aosta
+65,153,Valle dell'Angelo,Aosta
+25,63,Valle di Cadore,Aosta
+21,109,Valle di Casies,Aosta
+61,97,Valle di Maddaloni,Aosta
+18,168,Valle Lomellina,Aosta
+18,169,Valle Salimbene,Aosta
+96,74,Valle San Nicolao,Aosta
+8,62,Vallebona,Aosta
+60,82,Vallecorsa,Aosta
+8,63,Vallecrosia,Aosta
+82,76,Valledolmo,Aosta
+90,5,Valledoria,Aosta
+79,151,Vallefiorita,Aosta
+41,68,Vallefoglia,Aosta
+22,248,Vallelaghi,Aosta
+102,45,Vallelonga,Aosta
+85,21,Vallelunga Pratameno,Aosta
+60,83,Vallemaio,Aosta
+58,108,Vallepietra,Aosta
+56,54,Vallerano,Aosta
+111,95,Vallermosa,Aosta
+60,84,Vallerotonda,Aosta
+64,115,Vallesaccarda,Aosta
+16,226,Valleve,Aosta
+24,113,Valli del Pasubio,Aosta
+58,109,Vallinfreda,Aosta
+17,193,Vallio Terme,Aosta
+65,154,Vallo della Lucania,Aosta
+54,58,Vallo di Nera,Aosta
+1,286,Vallo Torinese,Aosta
+4,235,Valloriate,Aosta
+6,178,Valmacca,Aosta
+97,83,Valmadrera,Aosta
+58,110,Valmontone,Aosta
+13,232,Valmorea,Aosta
+34,44,Valmozzola,Aosta
+16,227,Valnegra,Aosta
+7,69,Valpelline,Aosta
+1,287,Valperga,Aosta
+1,288,Valprato Soana,Aosta
+37,61,Valsamoggia,Aosta
+7,70,Valsavarenche,Aosta
+77,30,Valsinni,Aosta
+13,234,Valsolda,Aosta
+103,69,Valstrona,Aosta
+54,59,Valtopina,Aosta
+16,229,Valtorta,Aosta
+7,71,Valtournenche,Aosta
+65,155,Valva,Aosta
+97,93,Valvarrone,Aosta
+93,53,Valvasone Arzene,Aosta
+87,52,Valverde,Aosta
+17,194,Valvestino,Aosta
+21,110,Vandoies,Aosta
+15,249,Vanzaghello,Aosta
+15,229,Vanzago,Aosta
+103,70,Vanzone con San Carlo,Aosta
+15,230,Vaprio d'Adda,Aosta
+3,153,Vaprio d'Agogna,Aosta
 2,156,Varallo,Vercelli
 3,154,Varallo Pombia,Vercelli
 12,132,Varano Borghi,Vercelli
@@ -7622,7 +7622,7 @@ Codice Provincia (Storico)(1),Progressivo del Comune (2),Denominazione in italia
 35,44,Viano,Verona
 46,33,Viareggio,Verona
 5,115,Viarigi,Verona
-102,47,Vibo Valentia,Verona
+102,47,Vibo-Valentia,Verona
 65,156,Vibonati,Verona
 60,86,Vicalvi,Verona
 82,78,Vicari,Verona
@@ -7678,56 +7678,56 @@ Codice Provincia (Storico)(1),Progressivo del Comune (2),Denominazione in italia
 68,46,Villa Celiera,Verona
 46,35,Villa Collemandina,Verona
 15,248,Villa Cortese,Verona
-16,238,Villa d'Adda,Vibo Valentia
-16,239,Villa d'Almè,Vibo Valentia
-96,78,Villa del Bosco,Vibo Valentia
-28,101,Villa del Conte,Vibo Valentia
-61,98,Villa di Briano,Vibo Valentia
-14,77,Villa di Chiavenna,Vibo Valentia
-16,240,Villa di Serio,Vibo Valentia
-14,78,Villa di Tirano,Vibo Valentia
-16,241,Villa d'Ogna,Vibo Valentia
-28,102,Villa Estense,Vibo Valentia
-8,67,Villa Faraldi,Vibo Valentia
-13,245,Villa Guardia,Vibo Valentia
-22,222,Villa Lagarina,Vibo Valentia
-60,88,Villa Latina,Vibo Valentia
-61,99,Villa Literno,Vibo Valentia
-35,45,Villa Minozzo,Vibo Valentia
-80,96,Villa San Giovanni,Vibo Valentia
-56,46,Villa San Giovanni in Tuscia,Vibo Valentia
-92,99,Villa San Pietro,Vibo Valentia
-5,119,Villa San Secondo,Vibo Valentia
-60,89,Villa Santa Lucia,Vibo Valentia
-66,104,Villa Santa Lucia degli Abruzzi,Vibo Valentia
-69,102,Villa Santa Maria,Vibo Valentia
-66,105,Villa Sant'Angelo,Vibo Valentia
-95,48,Villa Sant'Antonio,Vibo Valentia
-30,133,Villa Santina,Vibo Valentia
-60,90,Villa Santo Stefano,Vibo Valentia
-95,73,Villa Verde,Vibo Valentia
-21,113,Villabassa,Vibo Valentia
-82,79,Villabate,Vibo Valentia
-17,200,Villachiara,Vibo Valentia
-111,96,Villacidro,Vibo Valentia
-6,182,Villadeati,Vibo Valentia
-29,48,Villadose,Vibo Valentia
-103,75,Villadossola,Vibo Valentia
-4,244,Villafalletto,Vibo Valentia
-5,117,Villafranca d'Asti,Vibo Valentia
-23,96,Villafranca di Verona,Vibo Valentia
-45,16,Villafranca in Lunigiana,Vibo Valentia
-28,103,Villafranca Padovana,Vibo Valentia
-1,300,Villafranca Piemonte,Vibo Valentia
-84,43,Villafranca Sicula,Vibo Valentia
-83,105,Villafranca Tirrena,Vibo Valentia
-82,80,Villafrati,Vibo Valentia
-24,117,Villaga,Vibo Valentia
-91,101,Villagrande Strisaili,Vibo Valentia
-66,103,Villalago,Vibo Valentia
-85,22,Villalba,Vibo Valentia
-69,100,Villalfonsina,Vibo Valentia
-6,183,Villalvernia,Vibo Valentia
+16,238,Villa d'Adda,Vibo-Valentia
+16,239,Villa d'Almè,Vibo-Valentia
+96,78,Villa del Bosco,Vibo-Valentia
+28,101,Villa del Conte,Vibo-Valentia
+61,98,Villa di Briano,Vibo-Valentia
+14,77,Villa di Chiavenna,Vibo-Valentia
+16,240,Villa di Serio,Vibo-Valentia
+14,78,Villa di Tirano,Vibo-Valentia
+16,241,Villa d'Ogna,Vibo-Valentia
+28,102,Villa Estense,Vibo-Valentia
+8,67,Villa Faraldi,Vibo-Valentia
+13,245,Villa Guardia,Vibo-Valentia
+22,222,Villa Lagarina,Vibo-Valentia
+60,88,Villa Latina,Vibo-Valentia
+61,99,Villa Literno,Vibo-Valentia
+35,45,Villa Minozzo,Vibo-Valentia
+80,96,Villa San Giovanni,Vibo-Valentia
+56,46,Villa San Giovanni in Tuscia,Vibo-Valentia
+92,99,Villa San Pietro,Vibo-Valentia
+5,119,Villa San Secondo,Vibo-Valentia
+60,89,Villa Santa Lucia,Vibo-Valentia
+66,104,Villa Santa Lucia degli Abruzzi,Vibo-Valentia
+69,102,Villa Santa Maria,Vibo-Valentia
+66,105,Villa Sant'Angelo,Vibo-Valentia
+95,48,Villa Sant'Antonio,Vibo-Valentia
+30,133,Villa Santina,Vibo-Valentia
+60,90,Villa Santo Stefano,Vibo-Valentia
+95,73,Villa Verde,Vibo-Valentia
+21,113,Villabassa,Vibo-Valentia
+82,79,Villabate,Vibo-Valentia
+17,200,Villachiara,Vibo-Valentia
+111,96,Villacidro,Vibo-Valentia
+6,182,Villadeati,Vibo-Valentia
+29,48,Villadose,Vibo-Valentia
+103,75,Villadossola,Vibo-Valentia
+4,244,Villafalletto,Vibo-Valentia
+5,117,Villafranca d'Asti,Vibo-Valentia
+23,96,Villafranca di Verona,Vibo-Valentia
+45,16,Villafranca in Lunigiana,Vibo-Valentia
+28,103,Villafranca Padovana,Vibo-Valentia
+1,300,Villafranca Piemonte,Vibo-Valentia
+84,43,Villafranca Sicula,Vibo-Valentia
+83,105,Villafranca Tirrena,Vibo-Valentia
+82,80,Villafrati,Vibo-Valentia
+24,117,Villaga,Vibo-Valentia
+91,101,Villagrande Strisaili,Vibo-Valentia
+66,103,Villalago,Vibo-Valentia
+85,22,Villalba,Vibo-Valentia
+69,100,Villalfonsina,Vibo-Valentia
+6,183,Villalvernia,Vibo-Valentia
 69,101,Villamagna,Vicenza
 64,117,Villamaina,Vicenza
 111,97,Villamar,Vicenza

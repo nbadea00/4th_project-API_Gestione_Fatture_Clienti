@@ -31,10 +31,12 @@ public class Fattura {
 	@GeneratedValue(strategy = GenerationType.IDENTITY)
 	private Long id;
 	@Column(nullable = false)
+	private Integer anno;
+	@Column(nullable = false)
 	private Date data;
 	@Column(nullable = false)
 	private BigDecimal importo;
-	@Column(nullable = false, unique = true)
+	@Column(nullable = false)
 	private Integer numero;
 	
 	
