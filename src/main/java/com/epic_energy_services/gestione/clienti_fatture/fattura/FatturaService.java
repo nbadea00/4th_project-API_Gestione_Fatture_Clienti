@@ -35,5 +35,9 @@ public class FatturaService {
 	public List<Fattura> findAll() {
 		return (List<Fattura>) repo.findAll();
 	}
+	
+	public void removeFatturaById(Long id) {
+		repo.deleteById(id);
+	}
 
 }

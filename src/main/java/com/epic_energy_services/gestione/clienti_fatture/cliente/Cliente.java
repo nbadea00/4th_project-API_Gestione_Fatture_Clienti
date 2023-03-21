@@ -2,15 +2,21 @@ package com.epic_energy_services.gestione.clienti_fatture.cliente;
 
 import java.math.BigDecimal;
 import java.sql.Date;
+import java.util.ArrayList;
 import java.util.List;
+
+import org.apache.commons.lang3.builder.ToStringExclude;
 
 import com.epic_energy_services.gestione.clienti_fatture.fattura.Fattura;
 import com.epic_energy_services.gestione.clienti_fatture.indirizzo.Indirizzo;
+import com.fasterxml.jackson.annotation.JsonIgnore;
 
+import jakarta.persistence.CascadeType;
 import jakarta.persistence.Column;
 import jakarta.persistence.Entity;
 import jakarta.persistence.EnumType;
 import jakarta.persistence.Enumerated;
+import jakarta.persistence.FetchType;
 import jakarta.persistence.GeneratedValue;
 import jakarta.persistence.GenerationType;
 import jakarta.persistence.Id;
@@ -61,10 +67,34 @@ public class Cliente {
 	@OneToOne
 	private Indirizzo indirizzoSedeOperativa;
 	
-	@OneToMany(mappedBy="cliente")
-	private List<Fattura> fatture;
 	
+	@OneToMany(mappedBy="cliente", cascade = CascadeType.ALL, fetch = FetchType.EAGER)
+	private List<Fattura> fatture = new ArrayList<>();
 
+	public Cliente(String ragioneSociale, String partitaIva, String email, Date dataInserimento,
+			Date dataUltimoContatto, BigDecimal fatturatoAnnuale, String pec, String telefono, String emailContatto,
+			String nomeContatto, String cognomeContatto, String telefonoContatto, TipoCliente tipoCliente,
+			Indirizzo indirizzoSedeLegale, Indirizzo indirizzoSedeOperativa, List<Fattura> fatture) {
+		super();
+		this.ragioneSociale = ragioneSociale;
+		this.partitaIva = partitaIva;
+		this.email = email;
+		this.dataInserimento = dataInserimento;
+		this.dataUltimoContatto = dataUltimoContatto;
+		this.fatturatoAnnuale = fatturatoAnnuale;
+		this.pec = pec;
+		this.telefono = telefono;
+		this.emailContatto = emailContatto;
+		this.nomeContatto = nomeContatto;
+		this.cognomeContatto = cognomeContatto;
+		this.telefonoContatto = telefonoContatto;
+		this.tipoCliente = tipoCliente;
+		this.indirizzoSedeLegale = indirizzoSedeLegale;
+		this.indirizzoSedeOperativa = indirizzoSedeOperativa;
+		this.fatture = fatture;
+	}
+	
+	
 	
 
 }

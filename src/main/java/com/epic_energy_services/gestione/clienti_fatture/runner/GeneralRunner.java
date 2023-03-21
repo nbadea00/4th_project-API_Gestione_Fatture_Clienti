@@ -3,14 +3,23 @@ package com.epic_energy_services.gestione.clienti_fatture.runner;
 import java.io.FileNotFoundException;
 import java.io.FileReader;
 import java.io.IOException;
+import java.math.BigDecimal;
+import java.sql.Date;
+import java.util.List;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.ApplicationArguments;
 import org.springframework.boot.ApplicationRunner;
 import org.springframework.stereotype.Component;
 
+import com.epic_energy_services.gestione.clienti_fatture.cliente.Cliente;
+import com.epic_energy_services.gestione.clienti_fatture.cliente.ClienteService;
+import com.epic_energy_services.gestione.clienti_fatture.cliente.TipoCliente;
 import com.epic_energy_services.gestione.clienti_fatture.comune.Comune;
 import com.epic_energy_services.gestione.clienti_fatture.comune.ComuneService;
+import com.epic_energy_services.gestione.clienti_fatture.fattura.Fattura;
+import com.epic_energy_services.gestione.clienti_fatture.fattura.FatturaService;
+import com.epic_energy_services.gestione.clienti_fatture.fattura.StatoFattura;
 import com.epic_energy_services.gestione.clienti_fatture.provincia.Provincia;
 import com.epic_energy_services.gestione.clienti_fatture.provincia.ProvinciaService;
 import com.opencsv.CSVReader;
@@ -20,14 +29,39 @@ public class GeneralRunner implements ApplicationRunner {
 	
 	@Autowired ComuneService comuneService;
 	@Autowired ProvinciaService provinciaService;
+	@Autowired ClienteService clientService;
+	@Autowired FatturaService fatturaService;
 
 	@Override
 	public void run(ApplicationArguments args) throws Exception {
 		System.out.println("General Runner run...");
 		
-		//popolaDbProvince();
-		//popolaDbComuni();
+//		popolaDbProvince();
+//		popolaDbComuni();
+//		
+//		Cliente c = new Cliente("Azienda B", "IT000555666", "aziendaB@email.com", Date.valueOf("2022-07-02"), Date.valueOf("2022-07-02"), new BigDecimal(100000), "pecB", "034265345", "emailB@contatto.it", "nomecontatto", "cognomecontatto", "46543345"	, TipoCliente.SPA, null, null, null);
+//		
+//		clientService.createCliente(c);
+//	
+//		Fattura f = new Fattura(Date.valueOf("2023-03-03"), new BigDecimal(10000), 1, StatoFattura.NON_PAGATA);
+//		 
+//		fatturaService.createFattura(f);
+//		
+ 
+//		Fattura f = fatturaService.findById(1L);
+//		System.out.println(f);
+//		f.setCliente(clientService.findById(1L));
+//		System.out.println(f);
+//		fatturaService.updateFattura(f);
+		
+		
+	 System.out.println(clientService.findById(1L).getFatture());
+		
+
 	}
+	
+	
+	
 	
 	// PROVINCE
 	public void popolaDbProvince() {
