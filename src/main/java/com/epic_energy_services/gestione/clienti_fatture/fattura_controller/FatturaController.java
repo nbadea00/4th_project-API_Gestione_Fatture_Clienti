@@ -37,11 +37,15 @@ public class FatturaController {
 		return ResponseEntity.ok(fatturaServ.findById(id));
 	}
 	
-	@PostMapping("/aggiungi")
+	@PostMapping("/{idCliente}/aggiungi")
 	@PreAuthorize("hasRole('ADMIN')")
-	public ResponseEntity<String> addFattura(@RequestBody Fattura fattura){
-		ResponseEntity.ok(fatturaServ.createFattura(fattura));
-		return ResponseEntity.ok("Fattura Creata!");
+	public ResponseEntity<Fattura> addFattura(@RequestBody Fattura fattura,
+			@PathVariable Long idCliente){
+		Cliente c = clienteServ.findById(idCliente);
+		fattura.setCliente(c);
+		fatturaServ.createFattura(fattura);
+		
+		return ResponseEntity.ok(fattura);
 	}
 	
 	@PutMapping("/modifica")

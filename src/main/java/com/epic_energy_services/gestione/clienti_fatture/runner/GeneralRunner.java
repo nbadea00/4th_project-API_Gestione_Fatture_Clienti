@@ -36,8 +36,8 @@ public class GeneralRunner implements ApplicationRunner {
 	public void run(ApplicationArguments args) throws Exception {
 		System.out.println("General Runner run...");
 		
-//		popolaDbProvince();
-//		popolaDbComuni();
+		popolaDbProvince();
+		popolaDbComuni();
 //		
 //		Cliente c = new Cliente("Azienda B", "IT000555666", "aziendaB@email.com", Date.valueOf("2022-07-02"), Date.valueOf("2022-07-02"), new BigDecimal(100000), "pecB", "034265345", "emailB@contatto.it", "nomecontatto", "cognomecontatto", "46543345"	, TipoCliente.SPA, null, null, null);
 //		
@@ -54,8 +54,6 @@ public class GeneralRunner implements ApplicationRunner {
 //		System.out.println(f);
 //		fatturaService.updateFattura(f);
 		
-		
-	 System.out.println(clientService.findById(1L).getFatture());
 		
 
 	}
