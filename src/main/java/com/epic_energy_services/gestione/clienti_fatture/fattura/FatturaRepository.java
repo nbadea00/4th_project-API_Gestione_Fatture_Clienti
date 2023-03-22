@@ -2,23 +2,22 @@ package com.epic_energy_services.gestione.clienti_fatture.fattura;
 
 import java.math.BigDecimal;
 import java.sql.Date;
-import java.util.List;
-
+import org.springframework.data.domain.Page;
+import org.springframework.data.domain.PageRequest;
 import org.springframework.data.repository.CrudRepository;
-
 import com.epic_energy_services.gestione.clienti_fatture.cliente.Cliente;
 
 public interface FatturaRepository extends CrudRepository<Fattura, Long> {
 				
-	 List<Fattura> findByCliente(Cliente c);
+	 Page<Fattura> findByCliente(Cliente c, PageRequest p);
 
-	 List<Fattura> findByStatoFattura(StatoFattura statoFattura);
+	 Page<Fattura> findByStatoFattura(StatoFattura statoFattura, PageRequest p);
 
-	 List<Fattura> findByData(Date data);
+	 Page<Fattura> findByData(Date data, PageRequest p);
 
-	 List<Fattura> findByAnno(Integer anno);
+	 Page<Fattura> findByAnno(Integer anno, PageRequest p);
 	 
-	 List<Fattura> findByImportoBetween(BigDecimal importoIniziale, BigDecimal importoFinale);
+	 Page<Fattura> findByImportoBetween(BigDecimal importoIniziale, BigDecimal importoFinale, PageRequest p);
 
 	
 }

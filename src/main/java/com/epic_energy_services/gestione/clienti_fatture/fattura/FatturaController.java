@@ -1,9 +1,9 @@
-package com.epic_energy_services.gestione.clienti_fatture.fattura_controller;
+package com.epic_energy_services.gestione.clienti_fatture.fattura;
 
 import java.math.BigDecimal;
 import java.sql.Date;
-import java.util.List;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.data.domain.Page;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.security.access.prepost.PreAuthorize;
@@ -19,9 +19,6 @@ import org.springframework.web.bind.annotation.RestController;
 
 import com.epic_energy_services.gestione.clienti_fatture.cliente.Cliente;
 import com.epic_energy_services.gestione.clienti_fatture.cliente.ClienteService;
-import com.epic_energy_services.gestione.clienti_fatture.fattura.Fattura;
-import com.epic_energy_services.gestione.clienti_fatture.fattura.FatturaService;
-import com.epic_energy_services.gestione.clienti_fatture.fattura.StatoFattura;
 
 @RestController
 @RequestMapping("/fatture")
@@ -30,9 +27,10 @@ public class FatturaController {
 	@Autowired FatturaService fatturaServ;
 	@Autowired ClienteService clienteServ;
 	
+	
 	@GetMapping
 	@PreAuthorize("hasRole('USER')")
-	public ResponseEntity<List<Fattura>> getAllFatture(){
+	public ResponseEntity<Page<Fattura>> getAllFatture(@RequestParam(value = "pagina",  defaultValue = "0") int pagina, @RequestParam(value = "dim", defaultValue = "5") int dim){
 		return ResponseEntity.ok(fatturaServ.findAll());
 	}
 	
@@ -74,30 +72,29 @@ public class FatturaController {
 		return ResponseEntity.ok("Fattura Cancellata!");
 	}
 	
-	
 	@GetMapping("/filtra/cliente={id}")
 	@PreAuthorize("hasRole('USER')")
-	public ResponseEntity<List<Fattura>> trovaFatturaByCliente(@PathVariable Long id){
-		return ResponseEntity.ok(fatturaServ.getFatturaByIdCliente(id));
+	public ResponseEntity<Page<Fattura>> trovaFatturaByCliente(@PathVariable Long id, @RequestParam(value = "pagina",  defaultValue = "0") int pagina, @RequestParam(value = "dim", defaultValue = "5") int dim){
+		return ResponseEntity.ok(fatturaServ.getFatturaByIdCliente(id,pagina, dim));
 	}
 	
 	@GetMapping("/filtra/stato={stato}")
 	@PreAuthorize("hasRole('USER')")
-	public ResponseEntity<List<Fattura>> trovaFatturaByStato(@PathVariable StatoFattura stato){
-		return ResponseEntity.ok(fatturaServ.getFatturaByStatoFattura(stato));
+	public ResponseEntity<Page<Fattura>> trovaFatturaByStato(@PathVariable StatoFattura stato,@RequestParam(value = "pagina",  defaultValue = "0") int pagina, @RequestParam(value = "dim", defaultValue = "5") int dim){
+		return ResponseEntity.ok(fatturaServ.getFatturaByStatoFattura(stato,pagina, dim));
 	}
 	
 	@GetMapping("/filtra/anno={anno}")
 	@PreAuthorize("hasRole('USER')")
-	public ResponseEntity<List<Fattura>> trovaFatturaByAnno(@PathVariable Integer anno){
-		return ResponseEntity.ok(fatturaServ.getFatturaByAnno(anno));
+	public ResponseEntity<Page<Fattura>> trovaFatturaByAnno(@PathVariable Integer anno, @RequestParam(value = "pagina",  defaultValue = "0") int pagina, @RequestParam(value = "dim", defaultValue = "5") int dim){
+		return ResponseEntity.ok(fatturaServ.getFatturaByAnno(anno,pagina, dim));
 	}
 	
-	@GetMapping("/filtra/importo1={imp1}/importo2={imp2}")
+	@GetMapping("/filtra")
 	@PreAuthorize("hasRole('USER')")
-	public ResponseEntity<List<Fattura>> trovaFatturaByImportoRange(
-			@PathVariable BigDecimal imp1,@PathVariable BigDecimal imp2){
-		return ResponseEntity.ok(fatturaServ.getFatturaByRangeImport(imp1, imp2));
+	public ResponseEntity<Page<Fattura>> trovaFatturaByImportoRange(
+			@RequestParam String imp1,@RequestParam String imp2, @RequestParam(value = "pagina",  defaultValue = "0") int pagina, @RequestParam(value = "dim", defaultValue = "5") int dim){
+		return ResponseEntity.ok(fatturaServ.getFatturaByRangeImport(new BigDecimal(imp1), new BigDecimal(imp2),pagina, dim));
 		}
 
 //	@GetMapping("/filtra/importo1?&")
@@ -108,8 +105,8 @@ public class FatturaController {
 	
 	@GetMapping("/filtra/data={data}")
 	@PreAuthorize("hasRole('USER')")
-	public ResponseEntity<List<Fattura>> trovaFatturaByData(@PathVariable Date data){
-		return ResponseEntity.ok(fatturaServ.getFatturaByData(data));
+	public ResponseEntity<Page<Fattura>> trovaFatturaByData(@PathVariable Date data, @RequestParam(value = "pagina",  defaultValue = "0") int pagina, @RequestParam(value = "dim", defaultValue = "5") int dim){
+		return ResponseEntity.ok(fatturaServ.getFatturaByData(data,pagina, dim));
 	}
 	
 	
