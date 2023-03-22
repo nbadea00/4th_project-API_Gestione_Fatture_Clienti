@@ -58,7 +58,11 @@ public ResponseEntity<String> removeClienteById (@PathVariable Long id){
 	
 }
 
+@GetMapping("/orderby/nome")
+public ResponseEntity<List<Cliente>> getClienteNome() {
+	return new ResponseEntity<List<Cliente>>(cService.findByName(),HttpStatus.OK);
+
 
 }
 
-
+}

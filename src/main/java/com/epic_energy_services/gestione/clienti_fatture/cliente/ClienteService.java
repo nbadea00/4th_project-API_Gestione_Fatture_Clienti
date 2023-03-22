@@ -1,7 +1,7 @@
 package com.epic_energy_services.gestione.clienti_fatture.cliente;
 
-import java.util.List;
 
+import java.util.List;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
@@ -34,7 +34,6 @@ public class ClienteService {
 	}
 	
 	
-	
 	public Cliente findById(Long id) {
 		return repo.findById(id).get();
 	}
@@ -42,7 +41,33 @@ public class ClienteService {
 	public List<Cliente> findAll() {
 		return (List<Cliente>) repo.findAll();
 	}
+	
+	
+	public List<Cliente> findByName() {
+		return repo.findAllByOrderByNomeContattoAsc(); 		
+	}
+	
+	public List<Cliente> findByFatturato(){
+		return repo.findByOrderByFatturatoAnnualeAsc(); 
+	}
+	
+	public List<Cliente> findByDataInserimento(){
+		return repo.findByOrderByDataInserimentoAsc(); 
+		
+	}
+	
+	public List<Cliente> findByDataUltimoContatto(){
+		return repo.findByOrderByDataUltimoContattoAsc(); 
+		
+	}
+	
+	public List<Cliente> findByProvinciaSedeLegale(){
+		return repo.findByOrderByProvinciaSedeLegaleAsc(); 
+		
+	}
+	
+	}
 
 	
 	
-}
+
