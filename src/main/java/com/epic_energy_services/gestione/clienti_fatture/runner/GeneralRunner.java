@@ -39,39 +39,29 @@ public class GeneralRunner implements ApplicationRunner {
 	@Override
 	public void run(ApplicationArguments args) throws Exception {
 		System.out.println("General Runner run...");
-		//popolaDbProvince();
-		//popolaDbComuni();
-		//popolaDbIndirizzi();
-		//popolaDbClienti();
-		//popolaDbFatture();
+		popolaDbProvince();
+		popolaDbComuni();
+		popolaDbIndirizzi();
+		popolaDbClienti();
+		popolaDbFatture();
 
 	}
 
 	// PROVINCE
 	public void popolaDbProvince() {
-		try (CSVReader csvReader = new CSVReader(new FileReader("src/main/resources/assets/province-italiane.csv"));) {
+		try (CSVReader csvReader = new CSVReader(new FileReader("src/main/resources/assets/province-italiane.csv"))) {
 		    String[] values = null;
+		    String[] keys = csvReader.readNext();
+		    Map<String, String> mapProvincia = new HashMap<String, String>();
 		    
-		    String provinciaNome;
-		    String provinciaSigla;
-		    String provinciaRegione;
-		    
-		    int n = 0;
-		    while ((values = csvReader.readNext()) != null) {
-		    	String value = values[0];
-		    	String[] splitValue = value.split(";");
-		    	
-		    	if(n != 0) {
-		    		provinciaSigla = splitValue[0];
-		    		provinciaNome = splitValue[1];
-		    		provinciaRegione = splitValue[2];
-		    		
-		    		Provincia p = new Provincia(provinciaNome, provinciaSigla, provinciaRegione);
-		    		provinciaService.createProvincia(p);
+		    while ((values = csvReader.readNext()) != null) {	    	
+		    	for(int i = 0; i < keys.length; i++) {
+		    		mapProvincia.put(keys[i], values[i]);
 		    	}
 		    	
-		    	n++;
+		    	Provincia p = factoryGenericaProva.creaProvincia(mapProvincia, keys);
 		    	
+		    	provinciaService.createProvincia(p);
 		    }
 		} catch (FileNotFoundException e) {
 			// TODO Auto-generated catch block
@@ -80,6 +70,8 @@ public class GeneralRunner implements ApplicationRunner {
 			// TODO Auto-generated catch block
 			e.printStackTrace();
 		}
+		
+		System.out.println("fine");
 	}
 	
 	// COMUNI

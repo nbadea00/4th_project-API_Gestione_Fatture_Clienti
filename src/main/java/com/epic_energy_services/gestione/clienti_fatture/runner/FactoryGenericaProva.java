@@ -121,6 +121,10 @@ public class FactoryGenericaProva {
 	public Provincia creaProvincia(Map<String, String> map, String[] keys) {
 		Provincia provincia = new Provincia();
 		
+		provincia.setSigla(map.get(keys[0]));
+		provincia.setNome(map.get(keys[1]));
+		provincia.setRegione(map.get(keys[2]));
+		
 		return provincia;
 	}
 
