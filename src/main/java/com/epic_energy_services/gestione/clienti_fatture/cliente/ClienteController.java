@@ -1,6 +1,8 @@
 package com.epic_energy_services.gestione.clienti_fatture.cliente;
 
-import java.util.List;
+import java.math.BigDecimal;
+import java.sql.Date;
+
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.data.domain.Page;
@@ -60,10 +62,66 @@ public ResponseEntity<String> removeClienteById (@PathVariable Long id){
 }
 
 @GetMapping("/orderby/nome")
-public ResponseEntity<List<Cliente>> getClienteNome(@RequestParam(value = "pagina",  defaultValue = "0") int pagina, @RequestParam(value = "dim", defaultValue = "5") int dim) {
-	return new ResponseEntity<List<Cliente>>(cService.findByName(pagina, dim),HttpStatus.OK);
+public ResponseEntity<Page<Cliente>> getClienteNome(@RequestParam(value = "pagina",  defaultValue = "0") int pagina, @RequestParam(value = "dim", defaultValue = "5") int dim) {
+	return new ResponseEntity<Page<Cliente>>(cService.orderByName(pagina, dim),HttpStatus.OK);
 
 
 }
+
+@GetMapping("/orderby/fatturato")
+public ResponseEntity<Page<Cliente>> getFatturato(@RequestParam(value = "pagina",  defaultValue = "0") int pagina, @RequestParam(value = "dim", defaultValue = "5") int dim) {
+	return new ResponseEntity<Page<Cliente>>(cService.orderByFatturato(pagina, dim),HttpStatus.OK);
+
+}
+
+@GetMapping("/orderby/datainserimento")
+public ResponseEntity<Page<Cliente>> getDataInserimento(@RequestParam(value = "pagina",  defaultValue = "0") int pagina, @RequestParam(value = "dim", defaultValue = "5") int dim) {
+	return new ResponseEntity<Page<Cliente>>(cService.orderByDataInserimento(pagina, dim),HttpStatus.OK);
+
+}
+
+@GetMapping("/orderby/dataultimocontatto")
+public ResponseEntity<Page<Cliente>> getDataUltimoContatto(@RequestParam(value = "pagina",  defaultValue = "0") int pagina, @RequestParam(value = "dim", defaultValue = "5") int dim) {
+	return new ResponseEntity<Page<Cliente>>(cService.orderByDataUltimoContatto(pagina, dim),HttpStatus.OK);
+
+}
+
+@GetMapping("/orderby/provinciasedelegale")
+
+public ResponseEntity<Page<Cliente>> getProvinciaSedeLegale(@RequestParam(value = "pagina",  defaultValue = "0") int pagina, @RequestParam(value = "dim", defaultValue = "5") int dim) {
+	return new ResponseEntity<Page<Cliente>>(cService.orderByProvinciaSedeLegale(pagina, dim),HttpStatus.OK);
+
+}
+
+@GetMapping("/findby/fatturatoannuale")
+
+public ResponseEntity<Page<Cliente>> findByFatturatoAnnuale(@RequestParam(value = "pagina",  defaultValue = "0") int pagina, @RequestParam(value = "dim", defaultValue = "5") int dim, @RequestParam(value = "min",  defaultValue = "0") String min, @RequestParam(value = "max",  defaultValue = "0") String max) {
+
+	return new ResponseEntity<Page<Cliente>>(cService.findByFatturatoAnnuale(new BigDecimal(min), new BigDecimal (max), pagina, dim),HttpStatus.OK);
+
+}
+
+
+@GetMapping("/findby/datainserimento")
+
+public ResponseEntity<Page<Cliente>> findByDataInserimento(@RequestParam(value = "pagina",  defaultValue = "0") int pagina, @RequestParam(value = "dim", defaultValue = "5") int dim, @RequestParam(value = "inizio",  defaultValue = "0") Date inizio, @RequestParam(value = "fine",  defaultValue = "0") Date fine) {
+	return new ResponseEntity<Page<Cliente>>(cService.findByDataInserimento(inizio, fine, pagina, dim),HttpStatus.OK);
+
+}
+
+@GetMapping("/findby/dataultimocontatto")
+
+public ResponseEntity<Page<Cliente>> findByDataUltimoContatto(@RequestParam(value = "pagina",  defaultValue = "0") int pagina, @RequestParam(value = "dim", defaultValue = "5") int dim, @RequestParam(value = "inizio",  defaultValue = "0") Date inizio, @RequestParam(value = "fine",  defaultValue = "0") Date fine) {
+	return new ResponseEntity<Page<Cliente>>(cService.findByDataUltimoContatto(inizio, fine, pagina, dim),HttpStatus.OK);
+
+}
+
+@GetMapping("/findby/partenomecontatto")
+
+public ResponseEntity<Page<Cliente>> findByParteNome(@RequestParam(value = "pagina",  defaultValue = "0") int pagina, @RequestParam(value = "dim", defaultValue = "5") int dim, @RequestParam(value = "nome",  defaultValue = "0") String nome) {
+	return new ResponseEntity<Page<Cliente>>(cService.findbyParteNome(nome,pagina, dim),HttpStatus.OK);
+
+}
+
 
 }
