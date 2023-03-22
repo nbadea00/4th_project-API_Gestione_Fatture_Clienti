@@ -1,6 +1,8 @@
 package com.epic_energy_services.gestione.clienti_fatture.cliente;
 
 
+import java.math.BigDecimal;
+import java.sql.Date;
 import java.util.List;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.data.domain.Page;
@@ -47,31 +49,58 @@ public class ClienteService {
 	}
 	
 	
-	public List<Cliente> findByName(int pagina, int dimensioniPagina) {
-		return repo.findAllByOrderByNomeContattoAsc(PageRequest.of(pagina, dimensioniPagina, Sort.by("nomeContatto").ascending())); 		
+	public Page<Cliente> orderByName(int pagina, int dimensioniPagina) {
+		return repo.findAll(PageRequest.of(pagina, dimensioniPagina, Sort.by("nomeContatto").ascending())); 		
 	}
 	
-	public List<Cliente> findByFatturato(){
-		return repo.findByOrderByFatturatoAnnualeAsc(); 
+	public Page<Cliente> orderByFatturato(int pagina, int dimensioniPagina){
+		return repo.findAll(PageRequest.of(pagina, dimensioniPagina, Sort.by("fatturatoAnnuale").ascending())); 
 	}
 	
-	public List<Cliente> findByDataInserimento(){
-		return repo.findByOrderByDataInserimentoAsc(); 
+	public Page<Cliente> orderByDataInserimento(int pagina, int dimensioniPagina){
+		return repo.findAll(PageRequest.of(pagina, dimensioniPagina, Sort.by("dataInserimento").ascending())); 
 		
 	}
 	
-	public List<Cliente> findByDataUltimoContatto(){
-		return repo.findByOrderByDataUltimoContattoAsc(); 
+	public Page<Cliente> orderByDataUltimoContatto(int pagina, int dimensioniPagina){
+		return repo.findAll(PageRequest.of(pagina, dimensioniPagina, Sort.by("dataUltimoContatto").ascending())); 
 		
 	}
 	
-	public List<Cliente> findByProvinciaSedeLegale(){
-		return repo.findByOrderByProvinciaSedeLegaleAsc(); 
+	public Page<Cliente> orderByProvinciaSedeLegale(int pagina, int dimensioniPagina){
+		return repo.findByOrderByProvinciaSedeLegaleAsc(PageRequest.of(pagina, dimensioniPagina)); 
 		
 	}
+	
+	
+	public Page<Cliente> findByFatturatoAnnuale(BigDecimal fatturatoMinimo, BigDecimal fatturatoMassimo, int pagina, int dimensioniPagina) {
+		return repo.findByFatturatoAnnualeBetween(fatturatoMinimo, fatturatoMassimo,PageRequest.of(pagina, dimensioniPagina));
+	}
+
+	
+	public Page<Cliente> findByDataInserimento(Date dataInizio,Date dataFine, int pagina, int dimensioniPagina) {
+		return repo.findByDataInserimentoBetween(dataInizio, dataFine,PageRequest.of(pagina, dimensioniPagina));
+	
+	}
+
+	public Page<Cliente> findByDataUltimoContatto(Date dataInizio,Date dataFine, int pagina, int dimensioniPagina) {
+		return repo.findByDataUltimoContattoBetween(dataInizio, dataFine,PageRequest.of(pagina, dimensioniPagina));
+	
+	}
+
+
+	public Page<Cliente> findbyParteNome(String nome, int pagina, int dimensioniPagina) {
+		return repo.findByNomeContattoLike(nome,PageRequest.of(pagina, dimensioniPagina));
 	
 	}
 
 	
+	
+
+}
+
+
+
+
 	
 

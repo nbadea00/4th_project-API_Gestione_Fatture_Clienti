@@ -5,7 +5,6 @@ import java.sql.Date;
 import java.util.ArrayList;
 import java.util.List;
 
-import org.apache.commons.lang3.builder.ToStringExclude;
 
 import com.epic_energy_services.gestione.clienti_fatture.fattura.Fattura;
 import com.epic_energy_services.gestione.clienti_fatture.indirizzo.Indirizzo;
