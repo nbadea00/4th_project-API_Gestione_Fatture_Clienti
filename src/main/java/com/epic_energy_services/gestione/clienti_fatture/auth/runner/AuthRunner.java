@@ -25,6 +25,7 @@ public class AuthRunner implements ApplicationRunner {
 	public void run(ApplicationArguments args) throws Exception {
 		System.out.println("Run...");
 		//setRoleDefault();
+
 		
 	}
 	
