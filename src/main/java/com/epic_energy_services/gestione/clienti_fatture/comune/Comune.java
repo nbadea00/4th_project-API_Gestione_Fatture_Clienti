@@ -39,13 +39,15 @@ public class Comune {
 	@Column(nullable = false)
 	private Integer progressivoComune;
 	
-	@OneToMany(mappedBy = "comune")
-	@JsonIgnore
+	@OneToMany(mappedBy = "comune", fetch = FetchType.LAZY)
 	@ToString.Exclude
+	@JsonIgnore
 	private List<Indirizzo> listaIndirizzi;
 
 	@ManyToOne
 	@JoinColumn(name = "id_provincia")
+	@ToString.Exclude
+	@JsonIgnore
 	private Provincia provincia;
 
 	public Comune(String nome, Integer codiceProvincia, Integer progressivoComune, Provincia provincia) {

@@ -40,6 +40,8 @@ public class Indirizzo {
 	private String cap;
 	
 	@ManyToOne(fetch = FetchType.EAGER)
+	@ToString.Exclude
+	@JsonIgnore
 	private Comune comune;
 	
 	@OneToOne(mappedBy="indirizzoSedeLegale")

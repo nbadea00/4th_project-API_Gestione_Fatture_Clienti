@@ -7,6 +7,7 @@ import com.fasterxml.jackson.annotation.JsonIgnore;
 
 import jakarta.persistence.Column;
 import jakarta.persistence.Entity;
+import jakarta.persistence.FetchType;
 import jakarta.persistence.GeneratedValue;
 import jakarta.persistence.GenerationType;
 import jakarta.persistence.Id;
@@ -34,9 +35,9 @@ public class Provincia {
 	@Column(nullable = false)
 	private String regione;
 	
-	@OneToMany(mappedBy = "provincia")
-	@JsonIgnore
+	@OneToMany(mappedBy = "provincia", fetch = FetchType.LAZY)
 	@ToString.Exclude
+	@JsonIgnore
 	private List<Comune> comuni;
 
 	public Provincia(String nome, String sigla, String regione) {

@@ -26,6 +26,7 @@ import jakarta.persistence.Table;
 import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
+import lombok.ToString;
 
 @Entity
 @Table(name = "clienti")
@@ -62,13 +63,19 @@ public class Cliente {
 	private TipoCliente tipoCliente;
 	
 	@OneToOne
+	@ToString.Exclude
+	@JsonIgnore
 	private Indirizzo indirizzoSedeLegale;
 	
 	@OneToOne
+	@ToString.Exclude
+	@JsonIgnore
 	private Indirizzo indirizzoSedeOperativa;
 	
 	
-	@OneToMany(mappedBy="cliente", cascade = CascadeType.ALL, fetch = FetchType.EAGER)
+	@OneToMany(mappedBy="cliente", cascade = CascadeType.ALL, fetch = FetchType.LAZY)
+	@ToString.Exclude
+	@JsonIgnore
 	private List<Fattura> fatture = new ArrayList<>();
 
 	public Cliente(String ragioneSociale, String partitaIva, String email, Date dataInserimento,

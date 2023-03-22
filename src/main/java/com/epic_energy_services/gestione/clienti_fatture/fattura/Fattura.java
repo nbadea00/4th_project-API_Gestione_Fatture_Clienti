@@ -42,13 +42,14 @@ public class Fattura {
 	
 	@ManyToOne
 	@JoinColumn(name="id_cliente")
-	@JsonIgnore
 	@ToString.Exclude
+	@JsonIgnore
 	private Cliente cliente; 
 	
 	@Column(nullable = false)
 	@Enumerated(EnumType.STRING)
 	private StatoFattura statoFattura;
+	
 public Fattura(Date data, BigDecimal importo, Integer numero, StatoFattura statoFattura) {
 	super();
 	this.data = data;

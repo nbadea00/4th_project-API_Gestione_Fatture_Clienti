@@ -3,6 +3,10 @@ package com.epic_energy_services.gestione.clienti_fatture.cliente;
 
 import java.util.List;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.data.domain.Page;
+import org.springframework.data.domain.PageRequest;
+import org.springframework.data.domain.Pageable;
+import org.springframework.data.domain.Sort;
 import org.springframework.stereotype.Service;
 
 @Service
@@ -38,13 +42,13 @@ public class ClienteService {
 		return repo.findById(id).get();
 	}
 	
-	public List<Cliente> findAll() {
-		return (List<Cliente>) repo.findAll();
+	public Page<Cliente> findAll(int pagina, int dimensioniPagina) {
+		return repo.findAll(PageRequest.of(pagina, dimensioniPagina));
 	}
 	
 	
-	public List<Cliente> findByName() {
-		return repo.findAllByOrderByNomeContattoAsc(); 		
+	public List<Cliente> findByName(int pagina, int dimensioniPagina) {
+		return repo.findAllByOrderByNomeContattoAsc(PageRequest.of(pagina, dimensioniPagina, Sort.by("nomeContatto").ascending())); 		
 	}
 	
 	public List<Cliente> findByFatturato(){
