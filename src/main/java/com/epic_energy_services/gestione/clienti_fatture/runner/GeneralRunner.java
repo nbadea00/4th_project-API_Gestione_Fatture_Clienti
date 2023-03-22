@@ -39,11 +39,11 @@ public class GeneralRunner implements ApplicationRunner {
 	@Override
 	public void run(ApplicationArguments args) throws Exception {
 		System.out.println("General Runner run...");
-		popolaDbProvince();
-		popolaDbComuni();
-		popolaDbIndirizzi();
-		popolaDbClienti();
-		popolaDbFatture();
+//		popolaDbProvince();
+//		popolaDbComuni();
+//		popolaDbIndirizzi();
+//		popolaDbClienti();
+//		popolaDbFatture();
 
 	}
 
