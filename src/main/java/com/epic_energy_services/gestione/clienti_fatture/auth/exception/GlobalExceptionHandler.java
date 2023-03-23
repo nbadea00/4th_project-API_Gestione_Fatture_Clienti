@@ -14,6 +14,9 @@ import org.springframework.web.servlet.mvc.method.annotation.ResponseEntityExcep
 
 import com.epic_energy_services.gestione.clienti_fatture.auth.payload.ErrorDetails;
 
+import jakarta.persistence.EntityExistsException;
+import jakarta.validation.ConstraintViolationException;
+
 import java.util.Date;
 import java.util.HashMap;
 import java.util.Map;
@@ -29,11 +32,27 @@ public class GlobalExceptionHandler extends ResponseEntityExceptionHandler {
                 webRequest.getDescription(false));
         return new ResponseEntity<>(errorDetails, HttpStatus.NOT_FOUND);
     }
+    
+    @ExceptionHandler(EntityExistsException.class)
+    public ResponseEntity<ErrorDetails> manageEntityExistsException(EntityExistsException exception,
+                                                                        WebRequest webRequest){
+        ErrorDetails errorDetails = new ErrorDetails(new Date(), exception.getMessage(),
+                webRequest.getDescription(false));
+        return new ResponseEntity<>(errorDetails, HttpStatus.FOUND);
+    }
 
     @ExceptionHandler(MyAPIException.class)
     public ResponseEntity<ErrorDetails> handleBlogAPIException(MyAPIException exception,
                                                                         WebRequest webRequest){
         ErrorDetails errorDetails = new ErrorDetails(new Date(), exception.getMessage(),
+                webRequest.getDescription(false));
+        return new ResponseEntity<>(errorDetails, HttpStatus.BAD_REQUEST);
+    }
+    
+    @ExceptionHandler(ConstraintViolationException.class)
+    public ResponseEntity<ErrorDetails> handleConstraintViolationException(ConstraintViolationException exception,
+                                                                        WebRequest webRequest){
+        ErrorDetails errorDetails = new ErrorDetails(new Date(), "Eamil non valida",
                 webRequest.getDescription(false));
         return new ResponseEntity<>(errorDetails, HttpStatus.BAD_REQUEST);
     }

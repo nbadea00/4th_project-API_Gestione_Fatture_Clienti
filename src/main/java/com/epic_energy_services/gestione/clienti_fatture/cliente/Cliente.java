@@ -22,6 +22,7 @@ import jakarta.persistence.Id;
 import jakarta.persistence.OneToMany;
 import jakarta.persistence.OneToOne;
 import jakarta.persistence.Table;
+import jakarta.validation.constraints.Email;
 import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
@@ -42,6 +43,7 @@ public class Cliente {
 	@Column(nullable = false, unique = true)
 	private String partitaIva;
 	@Column(nullable = false, unique = true)
+	@Email
 	private String email;
 	@Column(nullable = false)
 	private Date dataInserimento;

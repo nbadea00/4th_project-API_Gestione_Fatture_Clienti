@@ -42,9 +42,8 @@ public ResponseEntity<Cliente> createCliente( @RequestBody Cliente cliente){
 }
 
 @PutMapping("/{id}")
-public ResponseEntity<Cliente> updateCliente (@RequestBody Cliente cliente){
-	return new ResponseEntity<Cliente>(cService.updateCliente(cliente),HttpStatus.OK);
-
+public ResponseEntity<Cliente> updateCliente (@RequestBody Cliente cliente, @PathVariable Long id){
+	return new ResponseEntity<Cliente>(cService.updateCliente(cliente, id),HttpStatus.OK);
 }
 
 

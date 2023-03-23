@@ -3,45 +3,62 @@ package com.epic_energy_services.gestione.clienti_fatture.cliente;
 
 import java.math.BigDecimal;
 import java.sql.Date;
-import java.util.List;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.data.domain.Page;
 import org.springframework.data.domain.PageRequest;
-import org.springframework.data.domain.Pageable;
 import org.springframework.data.domain.Sort;
+import org.springframework.http.HttpStatus;
 import org.springframework.stereotype.Service;
+
+import com.epic_energy_services.gestione.clienti_fatture.auth.exception.MyAPIException;
+import com.epic_energy_services.gestione.clienti_fatture.auth.exception.ResourceNotFoundException;
+
+import jakarta.persistence.EntityExistsException;
 
 @Service
 public class ClienteService {
 	
-	@Autowired
-	ClienteRepository repo;
+	@Autowired ClienteRepository repo;
 	
 	public Cliente createCliente (Cliente c) {
-		repo.save(c);
-		System.out.println("Cliente creato");
-		return c;
+		
+		System.out.println(c.getPartitaIva());
+		
+		if(repo.findByEmail(c.getEmail()).isPresent()) throw new EntityExistsException("Email già in uso");
+		if(repo.findByEmailContatto(c.getEmailContatto()).isPresent()) throw new EntityExistsException("Email contatto già in uso");
+		if(repo.findByPartitaIva(c.getPartitaIva()).isPresent()) throw new EntityExistsException("Partita Iva già in uso");
+		if(repo.findByPec(c.getEmailContatto()).isPresent()) throw new EntityExistsException("Pec già in uso");
+		if(repo.findByTelefonoContatto(c.getTelefonoContatto()).isPresent()) throw new EntityExistsException("Telefono contatto già in uso");
+		if(repo.findByTelefono(c.getTelefono()).isPresent()) throw new EntityExistsException("Telefono già in uso");
+		return repo.save(c);
 	}
 	
-	public Cliente updateCliente (Cliente c) {
-		repo.save(c);
-		System.out.println("Cliente aggiornato");
-		return c;
+	public Cliente updateCliente (Cliente c, Long id) {
+		
+		c.setId(id);
+		
+		if( c.getId() == null) throw new MyAPIException(HttpStatus.NOT_FOUND, "Id non trovato");
+		if(repo.findByEmailAndIdNot(c.getEmail(), c.getId()).isPresent()) throw new EntityExistsException("Email già in uso");
+		if(repo.findByEmailContattoAndIdNot(c.getEmailContatto(), c.getId()).isPresent()) throw new EntityExistsException("Email contatto già in uso");
+		if(repo.findByPartitaIvaAndIdNot(c.getPartitaIva(), c.getId()).isPresent()) throw new EntityExistsException("Partita Iva già in uso");
+		if(repo.findByPecAndIdNot(c.getEmailContatto(), c.getId()).isPresent()) throw new EntityExistsException("Pec già in uso");
+		if(repo.findByTelefonoContattoAndIdNot(c.getTelefonoContatto(), c.getId()).isPresent()) throw new EntityExistsException("Telefono contatto già in uso");
+		if(repo.findByTelefonoAndIdNot(c.getTelefono(), c.getId()).isPresent()) throw new EntityExistsException("Telefono già in uso");
+		return repo.save(c);
 	}
 	
 	public void removeCliente (Cliente c) {
 		repo.delete(c);
-		System.out.println("Cliente rimosso");
 	}
 	
-	public String removeClienteById (Long id) { 
+	public String removeClienteById (Long id) {
 		repo.deleteById(id);
 		return "Cliente rimossso by id";
 	}
 	
 	
 	public Cliente findById(Long id) {
-		return repo.findById(id).get();
+		return repo.findById(id).orElseThrow(() -> new ResourceNotFoundException("Cliente", "id", id));
 	}
 	
 	public Page<Cliente> findAll(int pagina, int dimensioniPagina) {
