@@ -1,0 +1,897 @@
+{
+	"info": {
+		"_postman_id": "78d63c72-8938-4ef8-ba00-289da649ae8f",
+		"name": "bw",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "26218578"
+	},
+	"item": [
+		{
+			"name": "Auth",
+			"item": [
+				{
+					"name": "Register",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"firstname\" : \"admin\",\r\n    \"lastname\" : \"admin\",\r\n    \"username\" : \"admin\",\r\n    \"email\" : \"admin@mfail.com\",\r\n    \"password\" : \"admin\",\r\n    \"roles\" : [\"ROLE_USER\", \"ROLE_ADMIN\", \"ROLE_MODERATOR\"]\r\n    }",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8080/api/auth/register",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"auth",
+								"register"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Login",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"username\" : \"admin\",\r\n    \"password\" : \"admin\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8080/api/auth/login",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"auth",
+								"login"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Cliente",
+			"item": [
+				{
+					"name": "GetClienteById",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "Bearer eyJhbGciOiJIUzM4NCJ9.eyJzdWIiOiJhZG1pbkBtZmFpbC5jb20iLCJpYXQiOjE2Nzk2NTYwMDIsImV4cCI6MTY4MDUyMDAwMn0.L-427zwMEN9p-F4ApbLyNod__knRc9iqQtN-HgFkikVuUo7rmlm6SQAsShxiciQy",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "http://localhost:8080/api/clienti/1",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"clienti",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "GetClienteAll",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "Bearer eyJhbGciOiJIUzM4NCJ9.eyJzdWIiOiJhZG1pbkBtZmFpbC5jb20iLCJpYXQiOjE2Nzk2NTY1NTcsImV4cCI6MTY4MDUyMDU1N30.eB41OHaMUQsxaaU4rDK929_zNpHIokvXzI0lSWf5pnnkcAtpOukj28OxBUaPhG1u",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "http://localhost:8080/api/clienti",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"clienti"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "GetClientiOrderByNome",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "Bearer eyJhbGciOiJIUzM4NCJ9.eyJzdWIiOiJhZG1pbkBtZmFpbC5jb20iLCJpYXQiOjE2Nzk2NTY1NTcsImV4cCI6MTY4MDUyMDU1N30.eB41OHaMUQsxaaU4rDK929_zNpHIokvXzI0lSWf5pnnkcAtpOukj28OxBUaPhG1u",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "http://localhost:8080/api/clienti/orderby/nome",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"clienti",
+								"orderby",
+								"nome"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "GetClientiOrderByFatturato",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "Bearer eyJhbGciOiJIUzM4NCJ9.eyJzdWIiOiJhZG1pbkBtZmFpbC5jb20iLCJpYXQiOjE2Nzk2NTY1NTcsImV4cCI6MTY4MDUyMDU1N30.eB41OHaMUQsxaaU4rDK929_zNpHIokvXzI0lSWf5pnnkcAtpOukj28OxBUaPhG1u",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "http://localhost:8080/api/clienti/orderby/fatturato",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"clienti",
+								"orderby",
+								"fatturato"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "GetClientiOrderByDataInserimento",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "Bearer eyJhbGciOiJIUzM4NCJ9.eyJzdWIiOiJhZG1pbkBtZmFpbC5jb20iLCJpYXQiOjE2Nzk2NTY1NTcsImV4cCI6MTY4MDUyMDU1N30.eB41OHaMUQsxaaU4rDK929_zNpHIokvXzI0lSWf5pnnkcAtpOukj28OxBUaPhG1u",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "http://localhost:8080/api/clienti/orderby/datainserimento",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"clienti",
+								"orderby",
+								"datainserimento"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "GetClientiOrderByDataUltimoContatto",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "Bearer eyJhbGciOiJIUzM4NCJ9.eyJzdWIiOiJhZG1pbkBtZmFpbC5jb20iLCJpYXQiOjE2Nzk2NTY1NTcsImV4cCI6MTY4MDUyMDU1N30.eB41OHaMUQsxaaU4rDK929_zNpHIokvXzI0lSWf5pnnkcAtpOukj28OxBUaPhG1u",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "http://localhost:8080/api/clienti/orderby/dataultimocontatto",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"clienti",
+								"orderby",
+								"dataultimocontatto"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "GetClientiOrderByProvinciasedeLegale",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "Bearer eyJhbGciOiJIUzM4NCJ9.eyJzdWIiOiJhZG1pbkBtZmFpbC5jb20iLCJpYXQiOjE2Nzk2NTY1NTcsImV4cCI6MTY4MDUyMDU1N30.eB41OHaMUQsxaaU4rDK929_zNpHIokvXzI0lSWf5pnnkcAtpOukj28OxBUaPhG1u",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "http://localhost:8080/api/clienti/orderby/provinciasedelegale",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"clienti",
+								"orderby",
+								"provinciasedelegale"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "GetClientiFindByFatturatoAnnuale",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "Bearer eyJhbGciOiJIUzM4NCJ9.eyJzdWIiOiJhZG1pbkBtZmFpbC5jb20iLCJpYXQiOjE2Nzk2NTY1NTcsImV4cCI6MTY4MDUyMDU1N30.eB41OHaMUQsxaaU4rDK929_zNpHIokvXzI0lSWf5pnnkcAtpOukj28OxBUaPhG1u",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "http://localhost:8080/api/clienti/findby/fatturatoannuale?min=50000&max=100000",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"clienti",
+								"findby",
+								"fatturatoannuale"
+							],
+							"query": [
+								{
+									"key": "min",
+									"value": "50000"
+								},
+								{
+									"key": "max",
+									"value": "100000"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "GetClientiFindByDatainserimento",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "Bearer eyJhbGciOiJIUzM4NCJ9.eyJzdWIiOiJhZG1pbkBtZmFpbC5jb20iLCJpYXQiOjE2Nzk2NTY1NTcsImV4cCI6MTY4MDUyMDU1N30.eB41OHaMUQsxaaU4rDK929_zNpHIokvXzI0lSWf5pnnkcAtpOukj28OxBUaPhG1u",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "http://localhost:8080/api/clienti/findby/datainserimento?inizio=2020-01-12&fine=2021-02-12",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"clienti",
+								"findby",
+								"datainserimento"
+							],
+							"query": [
+								{
+									"key": "inizio",
+									"value": "2020-01-12"
+								},
+								{
+									"key": "fine",
+									"value": "2021-02-12"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "GetClientiFindByDataUltimoContatto",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "Bearer eyJhbGciOiJIUzM4NCJ9.eyJzdWIiOiJhZG1pbkBtZmFpbC5jb20iLCJpYXQiOjE2Nzk2NTY1NTcsImV4cCI6MTY4MDUyMDU1N30.eB41OHaMUQsxaaU4rDK929_zNpHIokvXzI0lSWf5pnnkcAtpOukj28OxBUaPhG1u",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "http://localhost:8080/api/clienti/findby/dataultimocontatto?inizio=2020-01-12&fine=2021-12-12",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"clienti",
+								"findby",
+								"dataultimocontatto"
+							],
+							"query": [
+								{
+									"key": "inizio",
+									"value": "2020-01-12"
+								},
+								{
+									"key": "fine",
+									"value": "2021-12-12"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "GetClientiFindByParteNomeContatto",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "Bearer eyJhbGciOiJIUzM4NCJ9.eyJzdWIiOiJhZG1pbkBtZmFpbC5jb20iLCJpYXQiOjE2Nzk2NTY1NTcsImV4cCI6MTY4MDUyMDU1N30.eB41OHaMUQsxaaU4rDK929_zNpHIokvXzI0lSWf5pnnkcAtpOukj28OxBUaPhG1u",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "http://localhost:8080/api/clienti/findby/partenomecontatto?nome=ma",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"clienti",
+								"findby",
+								"partenomecontatto"
+							],
+							"query": [
+								{
+									"key": "nome",
+									"value": "ma"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "PostCliente",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "Bearer eyJhbGciOiJIUzM4NCJ9.eyJzdWIiOiJhZG1pbkBtYWlsLmNvbSIsImlhdCI6MTY3OTQ4OTY1MCwiZXhwIjoxNjgwMzUzNjUwfQ.L57U8j4oTRoG2Fg6oZvnwwcPLbW8AkyahFccrm-t0epXwhK1UOscopg0NOk9id0Z",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"ragioneSociale\": \"a\",\r\n    \"partitaIva\": \"5352553\",\r\n    \"email\": \"graano.berna@rfeail.it\",\r\n    \"dataInserimento\": \"2020-10-27\",\r\n    \"dataUltimoContatto\": \"2021-02-24\",\r\n    \"fatturatoAnnuale\": 232636.18,\r\n    \"pec\": \"damiano.roanofh@ogtmail.com\",\r\n    \"telefono\": \"349 174 67055\",\r\n    \"emailContatto\": \"dindo.pefllegriie@mail.it\",\r\n    \"nomeContatto\": \"Giulietta\",\r\n    \"cognomeContatto\": \"Parisi\",\r\n    \"telefonoContatto\": \"+ 36079-965-25582\",\r\n    \"tipoCliente\": \"SRL\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8080/api/clienti",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"clienti"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "PutCliente",
+					"request": {
+						"method": "PUT",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "Bearer eyJhbGciOiJIUzM4NCJ9.eyJzdWIiOiJhZG1pbkBtYWlsLmNvbSIsImlhdCI6MTY3OTQ4OTY1MCwiZXhwIjoxNjgwMzUzNjUwfQ.L57U8j4oTRoG2Fg6oZvnwwcPLbW8AkyahFccrm-t0epXwhK1UOscopg0NOk9id0Z",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"ragioneSociale\": \"Ciao\",\r\n    \"partitaIva\": \"61254797117\",\r\n    \"email\": \"graziano.bernardi@email.it\",\r\n    \"dataInserimento\": \"2020-10-27\",\r\n    \"dataUltimoContatto\": \"2021-02-24\",\r\n    \"fatturatoAnnuale\": 232636.18,\r\n    \"pec\": \"damiano.romano@hotmail.com\",\r\n    \"telefono\": \"349 174 605\",\r\n    \"emailContatto\": \"dindo.pellegrini@email.it\",\r\n    \"nomeContatto\": \"Giulietta\",\r\n    \"cognomeContatto\": \"Parisi\",\r\n    \"telefonoContatto\": \"079-965-2582\",\r\n    \"tipoCliente\": \"SRL\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8080/api/clienti/1",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"clienti",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "DelCliente",
+					"request": {
+						"method": "DELETE",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "Bearer eyJhbGciOiJIUzM4NCJ9.eyJzdWIiOiJhZG1pbkBtZmFpbC5jb20iLCJpYXQiOjE2Nzk2NTYwMDIsImV4cCI6MTY4MDUyMDAwMn0.L-427zwMEN9p-F4ApbLyNod__knRc9iqQtN-HgFkikVuUo7rmlm6SQAsShxiciQy",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "http://localhost:8080/api/clienti/10000",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"clienti",
+								"10000"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Fatture",
+			"item": [
+				{
+					"name": "GetFattureAll",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "Bearer eyJhbGciOiJIUzM4NCJ9.eyJzdWIiOiJhZG1pbkBtZmFpbC5jb20iLCJpYXQiOjE2Nzk2NTYwMDIsImV4cCI6MTY4MDUyMDAwMn0.L-427zwMEN9p-F4ApbLyNod__knRc9iqQtN-HgFkikVuUo7rmlm6SQAsShxiciQy",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "http://localhost:8080/api/fatture",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"fatture"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "GetFattuerById",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "Bearer eyJhbGciOiJIUzM4NCJ9.eyJzdWIiOiJhZG1pbkBtZmFpbC5jb20iLCJpYXQiOjE2Nzk2NTY1NTcsImV4cCI6MTY4MDUyMDU1N30.eB41OHaMUQsxaaU4rDK929_zNpHIokvXzI0lSWf5pnnkcAtpOukj28OxBUaPhG1u",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8080/api/fatture/1",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"fatture",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "GetFattuerByClienteId",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "Bearer eyJhbGciOiJIUzM4NCJ9.eyJzdWIiOiJhZG1pbkBtZmFpbC5jb20iLCJpYXQiOjE2Nzk2NTY1NTcsImV4cCI6MTY4MDUyMDU1N30.eB41OHaMUQsxaaU4rDK929_zNpHIokvXzI0lSWf5pnnkcAtpOukj28OxBUaPhG1u",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8080/api/fatture/findby/cliente=1",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"fatture",
+								"findby",
+								"cliente=1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "GetFattuerByFatturato",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "Bearer eyJhbGciOiJIUzM4NCJ9.eyJzdWIiOiJhZG1pbkBtZmFpbC5jb20iLCJpYXQiOjE2Nzk2NTY1NTcsImV4cCI6MTY4MDUyMDU1N30.eB41OHaMUQsxaaU4rDK929_zNpHIokvXzI0lSWf5pnnkcAtpOukj28OxBUaPhG1u",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8080/api/fatture/findby?imp1=4000&imp2=5000",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"fatture",
+								"findby"
+							],
+							"query": [
+								{
+									"key": "imp1",
+									"value": "4000"
+								},
+								{
+									"key": "imp2",
+									"value": "5000"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "GetFattuerByStatoFattura",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "Bearer eyJhbGciOiJIUzM4NCJ9.eyJzdWIiOiJhZG1pbkBtZmFpbC5jb20iLCJpYXQiOjE2Nzk2NTY1NTcsImV4cCI6MTY4MDUyMDU1N30.eB41OHaMUQsxaaU4rDK929_zNpHIokvXzI0lSWf5pnnkcAtpOukj28OxBUaPhG1u",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8080/api/fatture/findby/stato=PAGATA",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"fatture",
+								"findby",
+								"stato=PAGATA"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "GetFattuerByAnnoFattura",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "Bearer eyJhbGciOiJIUzM4NCJ9.eyJzdWIiOiJhZG1pbkBtZmFpbC5jb20iLCJpYXQiOjE2Nzk2NTY1NTcsImV4cCI6MTY4MDUyMDU1N30.eB41OHaMUQsxaaU4rDK929_zNpHIokvXzI0lSWf5pnnkcAtpOukj28OxBUaPhG1u",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8080/api/fatture/findby/anno=2020",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"fatture",
+								"findby",
+								"anno=2020"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "GetFattuerByData",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "Bearer eyJhbGciOiJIUzM4NCJ9.eyJzdWIiOiJhZG1pbkBtZmFpbC5jb20iLCJpYXQiOjE2Nzk2NTY1NTcsImV4cCI6MTY4MDUyMDU1N30.eB41OHaMUQsxaaU4rDK929_zNpHIokvXzI0lSWf5pnnkcAtpOukj28OxBUaPhG1u",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8080/api/fatture/findby/data=2020-01-12",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"fatture",
+								"findby",
+								"data=2020-01-12"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "PostFattura",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "Bearer eyJhbGciOiJIUzM4NCJ9.eyJzdWIiOiJhZG1pbkBtZmFpbC5jb20iLCJpYXQiOjE2Nzk2NTY1NTcsImV4cCI6MTY4MDUyMDU1N30.eB41OHaMUQsxaaU4rDK929_zNpHIokvXzI0lSWf5pnnkcAtpOukj28OxBUaPhG1u",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"anno\": 2023,\r\n    \"data\": \"2023-01-01\",\r\n    \"importo\": 4038.88,\r\n    \"numero\": 25,\r\n    \"statoFattura\": \"NON_PAGATA\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8080/api/fatture/id_cliente=1",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"fatture",
+								"id_cliente=1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "PutFattura",
+					"request": {
+						"method": "PUT",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "Bearer eyJhbGciOiJIUzM4NCJ9.eyJzdWIiOiJhZG1pbkBtZmFpbC5jb20iLCJpYXQiOjE2Nzk2NTY1NTcsImV4cCI6MTY4MDUyMDU1N30.eB41OHaMUQsxaaU4rDK929_zNpHIokvXzI0lSWf5pnnkcAtpOukj28OxBUaPhG1u",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"anno\": 2023,\r\n    \"data\": \"2023-01-01\",\r\n    \"importo\": 4038.88,\r\n    \"numero\": 25,\r\n    \"statoFattura\": \"NON_PAGATA\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8080/api/fatture/1",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"fatture",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "DelFattura",
+					"request": {
+						"method": "DELETE",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "Bearer eyJhbGciOiJIUzM4NCJ9.eyJzdWIiOiJhZG1pbkBtZmFpbC5jb20iLCJpYXQiOjE2Nzk2NTY1NTcsImV4cCI6MTY4MDUyMDU1N30.eB41OHaMUQsxaaU4rDK929_zNpHIokvXzI0lSWf5pnnkcAtpOukj28OxBUaPhG1u",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "http://localhost:8080/api/fatture/1",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"fatture",
+								"1"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		}
+	]
+}

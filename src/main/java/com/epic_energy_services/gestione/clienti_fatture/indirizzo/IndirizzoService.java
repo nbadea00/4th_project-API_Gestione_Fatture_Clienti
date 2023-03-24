@@ -5,6 +5,8 @@ import java.util.List;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
+import com.epic_energy_services.gestione.clienti_fatture.auth.exception.ResourceNotFoundException;
+
 @Service
 public class IndirizzoService {
 	
@@ -29,11 +31,17 @@ public class IndirizzoService {
 	}
 	
 	public Indirizzo findById(Long id) {
-		return repo.findById(id).get();
+		return repo.findById(id).orElseThrow(() -> new ResourceNotFoundException("Indirizzo", "id", id));
 	}
 	
 	public List<Indirizzo> findAll() {
 		return (List<Indirizzo>) repo.findAll();
+	}
+
+	public void removeIndirizzoById(Long id) {
+		repo.findById(id).orElseThrow(() -> new ResourceNotFoundException("Indirizzo", "id", id));
+		repo.deleteById(id);
+		System.out.println("Indirizzo rimosso");
 	}
 
 }

@@ -18,6 +18,7 @@ import jakarta.persistence.ManyToOne;
 import jakarta.persistence.OneToMany;
 import jakarta.persistence.Table;
 import lombok.AllArgsConstructor;
+import lombok.Builder;
 import lombok.Data;
 import lombok.NoArgsConstructor;
 import lombok.ToString;
@@ -27,6 +28,7 @@ import lombok.ToString;
 @Data
 @NoArgsConstructor
 @AllArgsConstructor
+@Builder
 public class Comune {
 	
 	@Id
@@ -39,7 +41,7 @@ public class Comune {
 	@Column(nullable = false)
 	private Integer progressivoComune;
 	
-	@OneToMany(mappedBy = "comune", fetch = FetchType.LAZY)
+	@OneToMany(mappedBy = "comune", fetch = FetchType.LAZY, cascade = CascadeType.ALL)
 	@ToString.Exclude
 	@JsonIgnore
 	private List<Indirizzo> listaIndirizzi;

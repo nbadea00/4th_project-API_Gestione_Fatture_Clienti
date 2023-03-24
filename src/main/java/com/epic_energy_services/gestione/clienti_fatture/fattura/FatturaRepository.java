@@ -4,10 +4,10 @@ import java.math.BigDecimal;
 import java.sql.Date;
 import org.springframework.data.domain.Page;
 import org.springframework.data.domain.PageRequest;
-import org.springframework.data.repository.CrudRepository;
+import org.springframework.data.jpa.repository.JpaRepository;
 import com.epic_energy_services.gestione.clienti_fatture.cliente.Cliente;
 
-public interface FatturaRepository extends CrudRepository<Fattura, Long> {
+public interface FatturaRepository extends JpaRepository<Fattura, Long> {
 				
 	 Page<Fattura> findByCliente(Cliente c, PageRequest p);
 

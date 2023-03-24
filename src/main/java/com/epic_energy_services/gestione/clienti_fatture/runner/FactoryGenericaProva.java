@@ -15,6 +15,7 @@ import com.epic_energy_services.gestione.clienti_fatture.cliente.TipoCliente;
 import com.epic_energy_services.gestione.clienti_fatture.comune.Comune;
 import com.epic_energy_services.gestione.clienti_fatture.comune.ComuneService;
 import com.epic_energy_services.gestione.clienti_fatture.fattura.Fattura;
+import com.epic_energy_services.gestione.clienti_fatture.fattura.FatturaService;
 import com.epic_energy_services.gestione.clienti_fatture.fattura.StatoFattura;
 import com.epic_energy_services.gestione.clienti_fatture.indirizzo.Indirizzo;
 import com.epic_energy_services.gestione.clienti_fatture.indirizzo.IndirizzoService;
@@ -28,6 +29,7 @@ public class FactoryGenericaProva {
 	@Autowired ProvinciaService provinciaService;
 	@Autowired ComuneService comuneService;
 	@Autowired ClienteService clienteService;
+	@Autowired FatturaService fatturaService;
 	
 	private static String dataFormat = "yyyy-MM-dd HH:mm:ss.SSS";
 	private static SimpleDateFormat formatter = new SimpleDateFormat(dataFormat);
@@ -70,7 +72,7 @@ public class FactoryGenericaProva {
 		c.setIndirizzoSedeOperativa(indirizzoService.findById(Long.parseLong(map.get(keys[14]))));
 		
 		
-		return c;
+		return clienteService.createCliente(c);
 	}
 	
 	public Comune creaComune(Map<String, String> map, String[] keys) {
@@ -79,9 +81,9 @@ public class FactoryGenericaProva {
 		comune.setCodiceProvincia(Integer.parseInt(map.get(keys[0])));
 		comune.setProgressivoComune(Integer.parseInt(map.get(keys[1])));
 		comune.setNome(map.get(keys[2]));
-		comune.setProvincia(provinciaService.getByNome(map.get(keys[3])));
+		comune.setProvincia(provinciaService.findByNome(map.get(keys[3])));
 		
-		return comune;
+		return comuneService.createComune(comune);
 	}
 	
 	public Indirizzo creaIndirizzo(Map<String, String> map, String[] keys) {
@@ -93,7 +95,7 @@ public class FactoryGenericaProva {
 		indirizzo.setVia(map.get(keys[3]));
 		indirizzo.setComune(comuneService.findById(Long.parseLong(map.get(keys[4]))));
 		
-		return indirizzo;
+		return indirizzoService.createIndirizzo(indirizzo);
 	}
 	
 	public Fattura creaFatture(Map<String, String> map, String[] keys) {
@@ -115,7 +117,7 @@ public class FactoryGenericaProva {
 		
 		fattura.setCliente(clienteService.findById(Long.parseLong(map.get(keys[5]))));
 		
-		return fattura;
+		return fatturaService.createFattura(fattura, -1l);
 	}
 	
 	public Provincia creaProvincia(Map<String, String> map, String[] keys) {
@@ -125,7 +127,7 @@ public class FactoryGenericaProva {
 		provincia.setNome(map.get(keys[1]));
 		provincia.setRegione(map.get(keys[2]));
 		
-		return provincia;
+		return provinciaService.createProvincia(provincia);
 	}
 
 }

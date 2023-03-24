@@ -22,8 +22,7 @@ public class ClienteService {
 	
 	public Cliente createCliente (Cliente c) {
 		
-		System.out.println(c.getPartitaIva());
-		
+		if(c.getDataInserimento().after(c.getDataUltimoContatto())) throw new MyAPIException(HttpStatus.FORBIDDEN,"Data Ultimo Contatto precede Data Inserimento");		
 		if(repo.findByEmail(c.getEmail()).isPresent()) throw new EntityExistsException("Email già in uso");
 		if(repo.findByEmailContatto(c.getEmailContatto()).isPresent()) throw new EntityExistsException("Email contatto già in uso");
 		if(repo.findByPartitaIva(c.getPartitaIva()).isPresent()) throw new EntityExistsException("Partita Iva già in uso");
@@ -37,7 +36,8 @@ public class ClienteService {
 		
 		c.setId(id);
 		
-		if( c.getId() == null) throw new MyAPIException(HttpStatus.NOT_FOUND, "Id non trovato");
+		if(c.getId() == null) throw new MyAPIException(HttpStatus.NOT_FOUND, "Id non trovato");
+		if(c.getDataInserimento().after(c.getDataUltimoContatto())) throw new MyAPIException(HttpStatus.FORBIDDEN,"Data Ultimo Contatto precede Data Inserimento");		
 		if(repo.findByEmailAndIdNot(c.getEmail(), c.getId()).isPresent()) throw new EntityExistsException("Email già in uso");
 		if(repo.findByEmailContattoAndIdNot(c.getEmailContatto(), c.getId()).isPresent()) throw new EntityExistsException("Email contatto già in uso");
 		if(repo.findByPartitaIvaAndIdNot(c.getPartitaIva(), c.getId()).isPresent()) throw new EntityExistsException("Partita Iva già in uso");
@@ -52,6 +52,7 @@ public class ClienteService {
 	}
 	
 	public String removeClienteById (Long id) {
+		repo.findById(id).orElseThrow(() -> new ResourceNotFoundException("Cliente", "id", id));
 		repo.deleteById(id);
 		return "Cliente rimossso by id";
 	}
@@ -107,12 +108,9 @@ public class ClienteService {
 
 
 	public Page<Cliente> findbyParteNome(String nome, int pagina, int dimensioniPagina) {
-		return repo.findByNomeContattoLike(nome,PageRequest.of(pagina, dimensioniPagina));
+		return repo.findByNomeContattoContains(nome,PageRequest.of(pagina, dimensioniPagina));
 	
 	}
-
-	
-	
 
 }
 

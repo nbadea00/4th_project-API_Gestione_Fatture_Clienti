@@ -5,6 +5,8 @@ import java.util.List;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
+import com.epic_energy_services.gestione.clienti_fatture.auth.exception.ResourceNotFoundException;
+
 @Service
 public class ProvinciaService {
 	
@@ -27,15 +29,21 @@ public class ProvinciaService {
 		System.out.println("Provincia rimossa");
 	}
 	
-	public Provincia getById(Long id) {
-		return repo.findById(id).get();
+	public void removeProvinciaById (Long id) {
+		repo.findById(id).orElseThrow(() -> new ResourceNotFoundException("Provincia", "id", id));
+		repo.deleteById(id);
+		System.out.println("Provincia rimossa");
 	}
 	
-	public List<Provincia> getAll() {
+	public Provincia findById(Long id) {
+		return repo.findById(id).orElseThrow(() -> new ResourceNotFoundException("Provincia", "id", id));
+	}
+	
+	public List<Provincia> findAll() {
 		return (List<Provincia>) repo.findAll();
 	}
 	
-	public Provincia getByNome(String s) {
+	public Provincia findByNome(String s) {
 		return repo.findByNome(s);
 	}
 }

@@ -14,40 +14,30 @@ import org.springframework.stereotype.Component;
 
 import com.epic_energy_services.gestione.clienti_fatture.cliente.Cliente;
 import com.epic_energy_services.gestione.clienti_fatture.comune.Comune;
-import com.epic_energy_services.gestione.clienti_fatture.comune.ComuneService;
 
-import com.epic_energy_services.gestione.clienti_fatture.cliente.ClienteService;
 import com.epic_energy_services.gestione.clienti_fatture.fattura.Fattura;
-import com.epic_energy_services.gestione.clienti_fatture.fattura.FatturaService;
 import com.epic_energy_services.gestione.clienti_fatture.indirizzo.Indirizzo;
-import com.epic_energy_services.gestione.clienti_fatture.indirizzo.IndirizzoService;
 import com.epic_energy_services.gestione.clienti_fatture.provincia.Provincia;
-import com.epic_energy_services.gestione.clienti_fatture.provincia.ProvinciaService;
 import com.opencsv.CSVReader;
 
 @Component
 public class GeneralRunner implements ApplicationRunner {
-	
-	@Autowired ComuneService comuneService;
-	@Autowired ProvinciaService provinciaService;
 	@Autowired FactoryGenericaProva factoryGenericaProva;
-	@Autowired ClienteService clientService;
-	@Autowired FatturaService fatturaService;
-	@Autowired IndirizzoService indirizzoService;
-	@Autowired ClienteService clienteService;
 
 	@Override
 	public void run(ApplicationArguments args) throws Exception {
-//		System.out.println("General Runner run...");
-//		popolaDbProvince();
-//		popolaDbComuni();
-//		popolaDbIndirizzi();
-//		popolaDbClienti();
-//		popolaDbFatture();
-
+		System.out.println("General Runner run...");
+		//popolaDb();
 	}
-
-	// PROVINCE
+	
+	public void popolaDb() {
+		popolaDbProvince();
+		popolaDbComuni();
+		popolaDbIndirizzi();
+		popolaDbClienti();
+		popolaDbFatture();
+	}
+	
 	public void popolaDbProvince() {
 		try (CSVReader csvReader = new CSVReader(new FileReader("src/main/resources/assets/province-italiane.csv"))) {
 		    String[] values = null;
@@ -61,7 +51,8 @@ public class GeneralRunner implements ApplicationRunner {
 		    	
 		    	Provincia p = factoryGenericaProva.creaProvincia(mapProvincia, keys);
 		    	
-		    	provinciaService.createProvincia(p);
+		    	System.out.println(p);
+		    	
 		    }
 		} catch (FileNotFoundException e) {
 			// TODO Auto-generated catch block
@@ -74,7 +65,6 @@ public class GeneralRunner implements ApplicationRunner {
 		System.out.println("fine");
 	}
 	
-	// COMUNI
 	public void popolaDbComuni() {
 		try (CSVReader csvReader = new CSVReader(new FileReader("src/main/resources/assets/comuni-italiani.csv"))) {
 		    String[] values = null;
@@ -88,7 +78,8 @@ public class GeneralRunner implements ApplicationRunner {
 		    	
 		    	Comune c = factoryGenericaProva.creaComune(mapComuni, keys);
 		    	
-		    	comuneService.createComune(c);
+		    	System.out.println(c);
+		    	
 		    }
 		} catch (FileNotFoundException e) {
 			// TODO Auto-generated catch block
@@ -113,7 +104,8 @@ public class GeneralRunner implements ApplicationRunner {
 		    	
 		    	Cliente c = factoryGenericaProva.creaCriente(mapCliente, keys);
 		    	
-		    	clienteService.createCliente(c);
+		    	System.out.println(c);
+		    	
 		    }
 		} catch (FileNotFoundException e) {
 			// TODO Auto-generated catch block
@@ -138,7 +130,8 @@ public class GeneralRunner implements ApplicationRunner {
 		    	
 		    	Indirizzo i = factoryGenericaProva.creaIndirizzo(mapIndirizzi, keys);
 		    	
-		    	indirizzoService.createIndirizzo(i);
+		    	System.out.println(i);
+		    	
 		    }
 		} catch (FileNotFoundException e) {
 			// TODO Auto-generated catch block
@@ -163,7 +156,8 @@ public class GeneralRunner implements ApplicationRunner {
 		    	
 		    	Fattura f = factoryGenericaProva.creaFatture(mapFatture, keys);
 		    	
-		    	fatturaService.createFattura(f);
+		    	System.out.println(f);
+		    	
 		    }
 		} catch (FileNotFoundException e) {
 			// TODO Auto-generated catch block

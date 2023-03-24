@@ -34,7 +34,7 @@ public Page<Cliente> findByDataInserimentoBetween(Date dataIniziale, Date dataFi
 
 public Page<Cliente> findByDataUltimoContattoBetween(Date dataIniziale, Date dataFinale, PageRequest pageRequest);
 
-public Page<Cliente> findByNomeContattoLike(String nome, PageRequest pageRequest);
+public Page<Cliente> findByNomeContattoContains (String nome, PageRequest pageRequest);
 }
 
 

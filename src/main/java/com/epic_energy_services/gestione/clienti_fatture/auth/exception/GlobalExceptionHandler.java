@@ -56,6 +56,15 @@ public class GlobalExceptionHandler extends ResponseEntityExceptionHandler {
                 webRequest.getDescription(false));
         return new ResponseEntity<>(errorDetails, HttpStatus.BAD_REQUEST);
     }
+    
+    @ExceptionHandler(IllegalArgumentException.class)
+    public ResponseEntity<ErrorDetails> handleIllegalArgumentException(IllegalArgumentException exception,
+                                                                        WebRequest webRequest){
+        ErrorDetails errorDetails = new ErrorDetails(new Date(), "Formato dei dati errato",
+                webRequest.getDescription(false));
+        return new ResponseEntity<>(errorDetails, HttpStatus.BAD_REQUEST);
+    }
+    
     // global exceptions
     @ExceptionHandler(Exception.class)
     public ResponseEntity<ErrorDetails> handleGlobalException(Exception exception,

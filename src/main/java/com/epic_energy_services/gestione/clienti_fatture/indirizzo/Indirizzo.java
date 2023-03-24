@@ -16,6 +16,7 @@ import jakarta.persistence.ManyToOne;
 import jakarta.persistence.OneToOne;
 import jakarta.persistence.Table;
 import lombok.AllArgsConstructor;
+import lombok.Builder;
 import lombok.Data;
 import lombok.NoArgsConstructor;
 import lombok.ToString;
@@ -25,6 +26,7 @@ import lombok.ToString;
 @Data
 @NoArgsConstructor
 @AllArgsConstructor
+@Builder
 public class Indirizzo {
 	
 	@Id
@@ -39,17 +41,17 @@ public class Indirizzo {
 	@Column(nullable = false)
 	private String cap;
 	
-	@ManyToOne(fetch = FetchType.EAGER)
+	@ManyToOne(fetch = FetchType.LAZY)
 	@ToString.Exclude
 	@JsonIgnore
 	private Comune comune;
 	
-	@OneToOne(mappedBy="indirizzoSedeLegale")
+	@OneToOne(mappedBy="indirizzoSedeLegale", cascade = CascadeType.ALL)
 	@JsonIgnore
 	@ToString.Exclude
 	private Cliente clienteLegale;
 	
-	@OneToOne(mappedBy="indirizzoSedeOperativa")
+	@OneToOne(mappedBy="indirizzoSedeOperativa", cascade = CascadeType.ALL)
 	@JsonIgnore
 	@ToString.Exclude
 	private Cliente clienteOperativa;
